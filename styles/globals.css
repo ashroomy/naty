@@ -1,0 +1,471 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* swiper */
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+:root {
+  --main-color: #2BA3AF;
+  --dark-color: #000;
+  --yellow-color: #EACBC6;
+  --blue-color: #EACBC6;
+}
+
+@layer components {
+  ul {
+    @apply list-none;
+  }
+  ul,
+  li {
+    @apply p-0 m-0;
+  }
+  a {
+    @apply no-underline;
+  }
+  html {
+    @apply overflow-x-hidden p-0 m-0;
+  }
+  body {
+    @apply w-full font-karla text-[18px] leading-[32px] tracking-[0px] font-normal break-words bg-white text-main-color overflow-x-hidden;
+  }
+  svg {
+    @apply fill-current w-[15px] h-[15px];
+  }
+  img.svg {
+    @apply w-[15px] h-[15px];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold leading-[1.3] font-inter text-dark-color;
+  }
+  h1 {
+    @apply text-[45px];
+  }
+  h2 {
+    @apply text-[36px];
+  }
+  h3 {
+    @apply text-[30px];
+  }
+  h4 {
+    @apply text-[24px];
+  }
+  h5 {
+    @apply text-[20px];
+  }
+  h6 {
+    @apply text-[16px];
+  }
+
+  /*---------------------------------------------------*/
+  /*	ELISC MEDIA QUERIES (FOR SMALL DEVICES)
+    /*---------------------------------------------------*/
+
+  /******** Larger Screens *********/
+
+  body {
+    @apply large:text-[16px] large:leading-[30px];
+  }
+
+  .tm_content {
+    @apply large:max-w-[1000px];
+  }
+  .elisc_tm_sidebar {
+    @apply large:!w-[300px];
+  }
+  .elisc_tm_mainpart {
+    @apply large:!pl-[300px];
+  }
+  .elisc_tm_sidebar .author {
+    @apply large:pt-[30px];
+  }
+  .elisc_tm_sidebar .author .image {
+    @apply large:w-[77px];
+  }
+  .elisc_tm_sidebar .name .back {
+    @apply large:text-[18px];
+  }
+  .elisc_tm_sidebar .name span {
+    @apply large:text-[50px];
+  }
+  .elisc_tm_sidebar .menu ul li {
+    @apply large:mb-[9px];
+  }
+  .elisc_tm_sidebar .copyright {
+    @apply large:bottom-[30px];
+  }
+  .elisc_tm_sidebar .social ul li a {
+    @apply large:w-[30px] large:h-[30px];
+  }
+  .elisc_tm_sidebar .social {
+    @apply large:mb-[2px];
+  }
+  .elisc_tm_sidebar .author .image {
+    @apply large:mb-[5px];
+  }
+  .elisc_tm_home .title h3,
+  .elisc_tm_home .title span {
+    @apply large:text-[50px] large:leading-[60px];
+  }
+  .elisc_tm_home .buttons {
+    @apply large:mb-[60px];
+  }
+  .elisc_tm_home .subtitle {
+    @apply large:mb-[30px];
+  }
+  .elisc_tm_home .info ul li a {
+    @apply large:text-[16px];
+  }
+  .elisc_tm_biography .text p {
+    @apply large:mb-[20px];
+  }
+  .elisc_tm_biography .info ul li {
+    @apply large:mr-[20px];
+  }
+  .elisc_tm_biography .title .mini {
+    @apply large:mb-[5px];
+  }
+  .elisc_tm_biography .name {
+    @apply large:text-[35px];
+  }
+  .elisc_tm_biography .job {
+    @apply large:text-[17px];
+  }
+  .elisc_tm_biography .title {
+    @apply large:mb-[30px];
+  }
+  .elisc_tm_counter ul li .list_inner {
+    @apply large:py-[45px] large:px-[20px];
+  }
+  .elisc_tm_counter h3 {
+    @apply large:text-[18px] mb-[3px];
+  }
+  .elisc_tm_title h3 {
+    @apply large:text-[35px];
+  }
+  .elisc_tm_title span {
+    @apply large:mb-[4px];
+  }
+  .elisc_tm_experience .list ul li .list_inner {
+    @apply large:p-[40px];
+  }
+  .elisc_tm_experience .job h3 {
+    @apply large:text-[19px];
+  }
+  .elisc_tm_experience .job span {
+    @apply large:mb-[3px];
+  }
+  .service_list .title span {
+    @apply large:text-[18px] large:mb-[10px];
+  }
+  .service_list .title h3 {
+    @apply large:text-[19px];
+  }
+  .service_list .text {
+    @apply large:mb-[20px];
+  }
+  .service_list ul li .list_inner {
+    @apply large:pb-[45px];
+  }
+  .elisc_tm_video .play {
+    @apply large:w-[100px] large:h-[100px];
+  }
+  .elisc_tm_video .text {
+    @apply large:py-[15px] px-[25px];
+  }
+  .elisc_tm_video .text h3 {
+    @apply large:text-[15px];
+  }
+  .elisc_tm_portfolio .portfolio_list .details .title a {
+    @apply large:text-[21px];
+  }
+  .elisc_tm_portfolio .portfolio_list .details .category {
+    @apply large:mb-0;
+  }
+  .elisc_tm_news .list .title h3 {
+    @apply large:text-[25px] large:leading-[33px];
+  }
+  .elisc_tm_news .list .meta {
+    @apply large:mb-[6px];
+  }
+  .elisc_tm_about {
+    @apply large:pt-[85px];
+  }
+  .elisc_tm_services {
+    @apply large:pt-[85px];
+  }
+  .elisc_tm_portfolio {
+    @apply large:pt-[85px];
+  }
+  .elisc_tm_news {
+    @apply large:pt-[85px];
+  }
+  .elisc_tm_contact {
+    @apply large:pt-[85px];
+  }
+  .elisc_tm_sticky_section {
+    @apply large:top-[85px];
+  }
+  .dodo_tm_one_page_wrapper .elisc_tm_news {
+    @apply large:pt-[85px];
+  }
+  .dodo_tm_one_page_wrapper .elisc_tm_portfolio {
+    @apply large:pt-[85px];
+  }
+
+  /******** Middle Screens *********/
+
+  .container {
+    @apply middle:py-0 middle:px-[20px];
+  }
+  .mouse-cursor {
+    @apply middle:hidden;
+  }
+  #preloader {
+    @apply middle:hidden;
+  }
+  .elisc_tm_topbar {
+    @apply middle:!inline-block;
+  }
+  .elisc_tm_sidebar {
+    @apply middle:!hidden;
+  }
+  .elisc_tm_mainpart {
+    @apply middle:!pl-0;
+  }
+  .elisc_tm_home .details {
+    @apply middle:items-baseline middle:flex-col-reverse;
+  }
+  .elisc_tm_home .details .left {
+    @apply middle:w-full;
+  }
+  .elisc_tm_home .details .righ {
+    @apply middle:w-full middle:pl-0 middle:mb-[50px];
+  }
+  .elisc_tm_home {
+    @apply middle:py-[100px] middle:px-0;
+  }
+  .elisc_tm_home .details .right {
+    @apply middle:w-full middle:pl-0 middle:mb-[50px];
+  }
+  .elisc_tm_home .title h3,
+  .elisc_tm_home .title span {
+    @apply middle:text-[50px] middle:leading-[63px];
+  }
+  .elisc_tm_home .buttons {
+    @apply middle:mb-[75px];
+  }
+  .elisc_tm_biography {
+    @apply middle:flex-col;
+  }
+  .elisc_tm_biography .left {
+    @apply middle:w-full middle:mb-[50px];
+  }
+  .elisc_tm_biography .right {
+    @apply middle:w-full;
+  }
+  .elisc_tm_biography .text p {
+    @apply middle:mb-[17px];
+  }
+  .elisc_tm_counter ul li {
+    @apply middle:w-1/2;
+  }
+  .elisc_tm_biography .info ul li {
+    @apply middle:mr-[25px];
+  }
+  .elisc_tm_title h3 {
+    @apply middle:text-[30px];
+  }
+  .elisc_tm_title span {
+    @apply middle:mb-[5px];
+  }
+  .elisc_tm_counter ul li .list_inner:before {
+    @apply middle:hidden;
+  }
+  .service_list ul li {
+    @apply middle:w-1/2;
+  }
+  .elisc_tm_partners ul li {
+    @apply middle:w-1/3;
+  }
+  .elisc_tm_testimonials .text p {
+    @apply middle:text-[20px] middle:leading-[33px];
+  }
+  .elisc_tm_testimonials .detail h3 {
+    @apply middle:text-[25px];
+  }
+  .elisc_tm_news .wrapper {
+    @apply middle:flex-col;
+  }
+  .elisc_tm_news .left {
+    @apply middle:pr-0 middle:w-full middle:mb-[50px];
+  }
+  .elisc_tm_news .right {
+    @apply middle:!pl-0 middle:!w-full;
+  }
+  .elisc_tm_news .list ul li .list_inner {
+    @apply middle:flex-col middle:items-baseline;
+  }
+  .elisc_tm_news .list .info {
+    @apply middle:w-full middle:mb-[20px];
+  }
+  .elisc_tm_news .list .title h3 {
+    @apply middle:text-[22px];
+  }
+  .elisc_tm_news .list .meta {
+    @apply middle:mb-[5px];
+  }
+  .movingbox {
+    @apply middle:hidden;
+  }
+  .elisc_tm_contact .wrapper {
+    @apply middle:flex-col;
+  }
+  .elisc_tm_contact .wrapper .left {
+    @apply middle:w-full middle:p-0 middle:mb-[40px];
+  }
+  .elisc_tm_contact .wrapper .right {
+    @apply middle:w-full middle:p-0;
+  }
+  .elisc_tm_contact .wrapper .text {
+    @apply middle:mb-[30px];
+  }
+  .elisc_tm_map {
+    @apply middle:mt-[70px];
+  }
+
+  /******** Small Screens *********/
+
+  .elisc_tm_home .title h3,
+  .elisc_tm_home .title span {
+    @apply small:text-[35px] small:leading-[45px];
+  }
+  .elisc_tm_counter ul {
+    @apply small:m-0;
+  }
+  .elisc_tm_counter ul li {
+    @apply small:w-full small:pl-0;
+  }
+  .elisc_tm_experience .list ul {
+    @apply small:m-0;
+  }
+  .elisc_tm_experience .list ul li {
+    @apply small:w-full small:pl-0;
+  }
+  .elisc_tm_experience .list ul li .list_inner {
+    @apply small:py-[35px] small:px-[25px];
+  }
+  .elisc_tm_experience .short {
+    @apply small:text-[15px];
+  }
+  .elisc_tm_experience .list ul li {
+    @apply small:mb-[30px];
+  }
+  .service_list ul {
+    @apply small:m-0;
+  }
+  .service_list ul li {
+    @apply small:w-full small:pl-0;
+  }
+  .elisc_tm_service_title {
+    @apply small:flex-col small:!items-baseline;
+  }
+  .elisc_tm_service_title .elisc_tm_title {
+    @apply small:mb-[20px];
+  }
+  .service_list ul li .list_inner {
+    @apply small:pl-[25px] small:pr-[25px];
+  }
+  .elisc_tm_video .text h3 {
+    @apply small:text-[12px];
+  }
+  .elisc_tm_video .text {
+    @apply small:py-[5px] small:px-[15px] small:bottom-[10px] small:right-[10px];
+  }
+  .elisc_tm_video .play {
+    @apply small:w-[45px] small:h-[45px];
+  }
+  .elisc_tm_video .play .svg {
+    @apply small:w-[13px] small:h-[13px];
+  }
+  .elisc_tm_portfolio_title {
+    @apply small:flex-col small:items-baseline;
+  }
+  .elisc_tm_portfolio_title .elisc_tm_title {
+    @apply small:mb-[20px];
+  }
+  .elisc_tm_partners ul li {
+    @apply small:w-1/2;
+  }
+}
+
+.portfolio_list .elisc_tm_button {
+  margin-top: 75px;
+}
+
+.testimonials_list .owl-dots {
+  margin-top: 39px;
+}
+
+.elisc_fn_moving_box {
+  width: 265px;
+  height: 198px;
+  border: 1px solid #fff;
+  position: fixed;
+  top: 50%;
+  right: 170px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.6);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.elisc_fn_moving_box.opened {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@media screen and (min-width: 1040px) {
+  .elisc_tm_mobile_menu {
+    display: none;
+  }
+}
+
+.elisc_tm_sidebar .social ul li {
+  margin: 0 10px 0 0;
+}
+
+.elisc_tm_sidebar .menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.elisc_tm_button input[type="submit"] {
+  font-family: unset;
+  text-transform: unset;
+  padding: 15px 40px 15px 40px;
+  height: unset;
+  font-weight: unset;
+  font-size: unset;
+}
+.elisc_tm_intro .pricing-info,
+.elisc_tm_intro .anim {
+  font-family: unset;
+}
