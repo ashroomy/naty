@@ -15,7 +15,7 @@ const About = () => {
                 <h3 className="name font-extrabold text-[40px]">
                   Natalia Fonseca
                 </h3>
-                <span className="job font-semibold text-[20px] text-dark-color">
+                <span className="job font-semibold text-[20px] text-white-color">
                   <span className="cd-headline rotate-1">
                     {" "}
                     {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
@@ -48,8 +48,8 @@ Con el tiempo, he observado cómo muchas lesiones y dolores crónicos tienen su 
           <div className="elisc_tm_counter w-full float-left mb-[10px]">
             <ul className="ml-[-30px]">
               <li className="mb-[30px] float-left w-[1/2] pl-[30px]">
-                <div className="list_inner w-full float-left relative text-center py-[60px] px-[20px] rounded-[4px] overflow-hidden bg-[#EACBC6]">
-                  <h3 className="text-[18px] mb-[7px]">Mi misión es enseñarte a entrenar con confianza, sin importar tu punto de partida, para que logres moverte con libertad, superar tus metas, y vivir fuerte.</h3>
+                <div className="list_inner text-white  w-full float-left relative text-center py-[60px] px-[20px] rounded-[4px] overflow-hidden bg-[#EACBC6]">
+                  <h3 className="text-[18px]  text-white mb-[7px]">Mi misión es enseñarte a entrenar con confianza, sin importar tu punto de partida, para que logres moverte con libertad, superar tus metas, y vivir fuerte.</h3>
                   <img
                     className=" m-auto w-auto h-[60px]  opacity-95"
                     src="assets/img/about/logo-white.png"
