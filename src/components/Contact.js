@@ -77,25 +77,25 @@ const Contact = () => {
                   <li className="mb-[8px] w-full float-left">
                     <a
                       className="text-dark-color font-semibold font-inter inline-block relative"
-                      href="tel:+77 022 444 05 05"
+                      href="http://wa.me/+50688820971"
                     >
-                      +77 022 444 05 05
+                      +506 88820971
                     </a>
                   </li>
-                  <li className="mb-[8px] w-full float-left">
+                  {/* <li className="mb-[8px] w-full float-left">
                     <a
                       className="text-dark-color font-semibold font-inter inline-block relative"
                       href="tel:+77 022 444 05 05"
                     >
                       support@elisc.com
                     </a>
-                  </li>
+                  </li> */}
                   <li className="w-full float-left">
                     <a
                       className="href_location text-dark-color font-semibold font-inter inline-block relative"
                       href="#"
                     >
-                      Ave Street Avenue, New York
+                      Alajuela, Costa Rica
                     </a>
                   </li>
                 </ul>

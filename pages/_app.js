@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Natalia Fonseca</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="Natalia Fonseca Coach de salud & fitness" />
         <meta name="author" content="Natalia Fonseca" />
         <meta

@@ -50,7 +50,10 @@ Con el tiempo, he observado cómo muchas lesiones y dolores crónicos tienen su 
               <li className="mb-[30px] float-left w-[1/2] pl-[30px]">
                 <div className="list_inner w-full float-left relative text-center py-[60px] px-[20px] rounded-[4px] overflow-hidden bg-[#EACBC6]">
                   <h3 className="text-[18px] mb-[7px]">Mi misión es enseñarte a entrenar con confianza, sin importar tu punto de partida, para que logres moverte con libertad, superar tus metas, y vivir fuerte.</h3>
-
+                  <img
+                    className=" m-auto w-auto h-[60px]  opacity-95"
+                    src="assets/img/about/logo-white.png"
+                    alt="image"/>
                 </div>
               </li>
 

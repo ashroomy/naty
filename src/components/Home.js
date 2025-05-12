@@ -11,19 +11,13 @@ const Home = () => {
           <div className="details w-full min-h-[100vh] flex items-center">
             <div className="left w-1/2">
               <div className="title w-full float-left mb-[21px]">
-                <h3 className="font-extrabold text-[60px] leading-[70px]">
+
+
+                <h3 className="font-extrabold italic text-[60px] leading-[70px] pb-4">
+                Vive seguro, entrena fuerte
+                </h3>
+                <h3 className="font-extrabold text-[60px]">
                   Hola, soy <span className="text-blue-color">Naty!</span>
-                </h3>
-                <h3 className="font-extrabold text-[60px] leading-[70px]">
-                  <span className="cd-headline rotate-1">
-                    {" "}
-                    {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                    {/* <span className="blc">Entrenadora Personal </span> */}
-                    {/* <TypeingAnimation /> */}
-                  </span>
-                </h3>
-                <h3 className="font-extrabold italic text-[60px] leading-[70px]">
-                Entrena seguro, vive fuerte
                 </h3>
               </div>
               <div className="subtitle wfll max-w-[80%] float-left mb-[40px]">
@@ -75,7 +69,7 @@ const Home = () => {
               </div>
             </div>
             <div className="right w-1/2 pl-[50px]">
-              <img src="assets/img/about/profile-1.png" alt="image" />
+              <img className="rounded-md shadow-md" src="assets/img/about/profile-1.jpg" alt="image" />
             </div>
           </div>
         </div>

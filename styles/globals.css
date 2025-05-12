@@ -7,8 +7,8 @@
 @import "swiper/css/pagination";
 
 :root {
-  --main-color: #2BA3AF;
-  --dark-color: #000;
+  --main-color: #000;
+  --dark-color: #2BA3AF;
   --yellow-color: #EACBC6;
   --blue-color: #EACBC6;
 }
