@@ -16,9 +16,7 @@ const Home = () => {
                 <h3 className="font-extrabold italic text-[60px] leading-[70px] pb-4">
                 Vive seguro, entrena fuerte
                 </h3>
-                <h3 className="font-extrabold text-[60px]">
-                  Hola, soy <span className="text-blue-color">Naty!</span>
-                </h3>
+
               </div>
               <div className="subtitle wfll max-w-[80%] float-left mb-[40px]">
                 <p>

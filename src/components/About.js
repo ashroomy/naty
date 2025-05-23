@@ -9,12 +9,15 @@ const About = () => {
           <div className="elisc_tm_biography w-full float-left flex mb-[40px]">
             <div className="left w-[40%]">
               <div className="title w-full float-left mb-[40px]">
-                <span className="mini block uppercase font-medium mb-[12px]">
+                {/* <span className="mini block uppercase font-medium mb-[12px]">
                   -  Mucho Gusto!
-                </span>
-                <h3 className="name font-extrabold text-[40px]">
-                  Natalia Fonseca
+                </span> */}
+                <h3 className="font-extrabold text-[40px]">
+                 Hola, ¡Soy <span className="text-blue-color">Naty!</span>
                 </h3>
+                {/* <h3 className="name font-extrabold text-[40px]">
+                  Natalia Fonseca
+                </h3> */}
                 <span className="job font-semibold text-[20px] text-white-color">
                   <span className="cd-headline rotate-1">
                     {" "}

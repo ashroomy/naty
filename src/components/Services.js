@@ -130,14 +130,21 @@ const Services = () => {
         <div className="elisc_tm_services w-full float-left  pb-[60px]">
           <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
             <div className="elisc_tm_service_title w-full float-left">
-              <div className="elisc_tm_title w-full  pb-[40px]">
+              <div className="elisc_tm_title w-full  md:pb-[40px] xs:pb-[20px]">
                 <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
                   - Servicios
                 </span>
                 <h3 className="text-[40px] font-extrabold">StrongHuman</h3>
               </div>
-              <div className="flex justify-between items-start gap-4">
-                <div className="w-1/2">
+              <div className="md:flex xs:flex-none justify-between items-start gap-4">
+              <div className="md:hidden xs:block w-full h-auto overflow-hidden pb-3">
+                  <img
+                    className="rounded-md shadow-md"
+                    src="assets/img/service/1.jpg"
+                    alt="image"
+                  />
+                </div>
+                <div className="md:w-1/2 xs:w-full">
                   <h3 className="text-[18px] text-main-color font-extrabold italic  pb-5 ">
                     Entrená con confianza. Aprendé a moverte sin dolor. Construí
                     una base fuerte
@@ -156,7 +163,7 @@ const Services = () => {
                   seguridad, buena técnica y sin miedo a lesionarse.
                 </p>
                 </div>
-                <div className=" w-1/2 h-[400px] overflow-hidden">
+                <div className="md:w-1/2 xs:hidden h-[auto] overflow-hidden pb-4">
                   <img
                     className="rounded-md shadow-md"
                     src="assets/img/service/1.jpg"
@@ -167,8 +174,8 @@ const Services = () => {
 
               <div>
 
-                <div className="flex">
-                  <div className="w-1/2">
+                <div className="md:flex xs:flex-none">
+                  <div className="md:w-1/2 xs:w-full">
                     <h6 className=" elisc_tm_title  w-fit text-[18px] font-bold pt-3 pb-4">
                       ¿Para quién es?
                     </h6>
@@ -191,7 +198,7 @@ const Services = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="w-1/2">
+                  <div className="md:w-1/2 xs:w-full">
                     <h6 className=" elisc_tm_title w-fit text-[18px] font-bold pt-3 pb-4">
                       ¿Qué vas a lograr?
                     </h6>
