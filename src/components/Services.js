@@ -119,16 +119,16 @@ const Services = () => {
                     Entrená con confianza. Aprendé a moverte sin dolor. Construí
                     una base fuerte
                   </h3>
-                  <p className="text-[#55527C] font-medium w-fit text-[16px] pb-3">
+                  <p className="text-[#55527C] font-medium w-fit text-[18px] pb-3">
                     ¿Sos principiante y querés aprender a entrenar correctamente
                     desde cero? <br />
                     ¿Tenés molestias, una lesión previa o simplemente nunca
                     encontraste un programa que te enseñe paso a paso?
                   </p>
-                  <p className="text-[#55527C] font-extrabold  text-sm w-fit text-[16px] ">
+                  <p className="text-[#55527C] font-extrabold  text-sm w-fit text-[18px] ">
                     StrongHuman es para vos.
                   </p>
-                  <p className="text-[#55527C] font-medium w-fit text-[16px] pt-3 pb-4">
+                  <p className="text-[#55527C] font-medium w-fit text-[18px] pt-3 pb-4">
                     Este programa fue creado para quienes quieren entrenar con
                     seguridad, buena técnica y sin miedo a lesionarse.
                   </p>
@@ -143,12 +143,12 @@ const Services = () => {
               </div>
 
               <div>
-                <div className="flex small:flex-none">
+                <div className=" small:flex-none small:block flex ">
                   <div className="w-1/2 small:w-full">
                     <h6 className=" elisc_tm_title  w-fit text-[18px] font-bold pt-3 pb-4">
                       ¿Para quién es?
                     </h6>
-                    <ul className="list-disc   text-main-color  list-inside  w-fit text-[16px] pb-9">
+                    <ul className="list-disc   text-main-color  list-inside  w-fit text-[18px] pb-9">
                       <li className="pb-2">
                         Principiantes que quieren aprender a entrenar
                         correctamente desde cero.
@@ -171,7 +171,7 @@ const Services = () => {
                     <h6 className=" elisc_tm_title w-fit text-[18px] font-bold pt-3 pb-4">
                       ¿Qué vas a lograr?
                     </h6>
-                    <ul className="list-disc list-inside    text-main-color  w-fit text-[16px] pb-9">
+                    <ul className="list-disc list-inside    text-main-color  w-fit text-[18px] pb-9">
                       <li className="pb-2">
                         Entender los principios de un entrenamiento seguro y
                         efectivo
@@ -200,7 +200,7 @@ const Services = () => {
               <p className=" text-main-color  text-[14px]">
                 Modalidad: Online + 3 Talleres Presenciales Grupales
               </p>
-              <ul className="list-disc list-inside  w-fit text-[16px] pb-9">
+              <ul className="list-disc list-inside  w-fit text-[18px] pb-9">
                 <li className="pb-2">✔️ Entrevista inicial online</li>
                 <li className="pb-2">
                   ✔️ Programación personalizada con app y videos paso a paso
@@ -212,7 +212,7 @@ const Services = () => {
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
                 ¿Cuándo empieza?
               </h6>
-              <p className=" text-main-color  font-bold text-[16px] pb-2">
+              <p className=" text-main-color  font-bold text-[18px] pb-2">
                 Fecha próxima generación: Inicio: 9 de Junio 2025
               </p>
               <p className=" text-main-color  text-[14px] pb-2">
@@ -242,7 +242,7 @@ const Services = () => {
                 <h6 className=" elisc_tm_title  text-main-color  w-fit text-[18px] font-bold pt-3 pb-4">
                   ¿Para quién es este servicio?
                 </h6>
-                <p className=" text-main-color  text-[16px] pb-3">
+                <p className=" text-main-color  text-[18px] pb-3">
                   Para personas con experiencia intermedia o avanzada que buscan
                   resultados reales, que tienen claros sus objetivos como:
                 </p>
@@ -250,7 +250,7 @@ const Services = () => {
 
               <div className="flex small:flex-none justify-between items-start gap-4">
                 <div className="w-1/2 small:w-full">
-                  <ul className="list-none  list-inside    text-main-color  w-fit text-[16px] pb-9 ">
+                  <ul className="list-none  list-inside    text-main-color  w-fit text-[18px] pb-9 ">
                     <li className="pb-2">
                       ✅ Aumentar fuerza y masa muscular con un plan bien
                       estructurado.
@@ -295,52 +295,54 @@ const Services = () => {
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
                 ¿Qué incluye tu plan mensual?{" "}
               </h6>
-              <ul className="list-disc list-inside  w-fit text-[16px] pb-9">
-                <li className="pb-2">
-                  🧭 Entrevista inicial virtual: Evaluamos tu punto de partida,
-                  objetivos y estilo de vida.
+              <ul className="list-none list-inside  w-fit text-[18px] pb-9">
+                <li className=" pb-2">
+                  🧭&nbsp;Entrevista inicial virtual: Evaluamos tu punto de
+                  partida, objetivos y estilo de vida.
                 </li>
                 <li className="pb-2">
-                  📱 Acceso exclusivo a una app de entrenamiento personalizada
-                  con tus rutinas y videos guía.
+                  📱&nbsp;Acceso exclusivo a una app de entrenamiento
+                  personalizada con tus rutinas y videos guía.
                 </li>
                 <li className="pb-2">
-                  🎥 Feedback semanal en tus videos: Te ayudo a mejorar tu
+                  🎥&nbsp;Feedback semanal en tus videos: Te ayudo a mejorar tu
                   técnica y asegurar progresos reales.
                 </li>
                 <li className="pb-2">
-                  📊 Ajustes continuos: Cada semana evaluamos y afinamos tu
+                  📊&nbsp;Ajustes continuos: Cada semana evaluamos y afinamos tu
                   programación.
                 </li>
                 <li className="pb-2">
-                  🗓️ 2 sesiones virtuales al mes: Para seguimiento, resolución
-                  de dudas y revisión de avances.
+                  🗓️&nbsp;2 sesiones virtuales al mes: Para seguimiento,
+                  resolución de dudas y revisión de avances.
                 </li>
                 <li className="pb-2">
-                  📩 Soporte personalizado por el app: Podés escribirme en
+                  📩&nbsp;Soporte personalizado por el app: Podés escribirme en
                   cualquier momento durante el mes.
                 </li>
               </ul>
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
-                💰 Inversión mensual: $80 USD
+                💰&nbsp;Inversión mensual: $80 USD
               </h6>
 
               <p className=" text-main-color  text-[14px] pb-3">
-                🔍 ¿Querés saber si este plan es para vos? <br />
+                🔍&nbsp;¿Querés saber si este plan es para vos? <br />
                 Completá este breve formulario y en menos de 24 horas me pondré
                 en contacto contigo para agendar una cita inicial virtual 100%
                 gratuita.
               </p>
               <div
-                  className="elisc_tm_button transition_link"
-                  data-style="border"
+                className="elisc_tm_button transition_link"
+                data-style="border"
+              >
+                <a
+                  href="https://forms.gle/rfkKz1Xn5azZZWky9"
+                  target="_blank"
+                  refer="noopener noreferrer"
                 >
-                  <a href="https://forms.gle/rfkKz1Xn5azZZWky9"   target="_blank"
-                  refer="noopener noreferrer">
                   Llenar Formulario
-                  </a>
-                </div>
-
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -353,124 +355,123 @@ const Services = () => {
                 <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
                   - Servicios
                 </span>
-                <h3 className="text-[40px] font-extrabold">Entrenamiento Personalizado – Modalidad Híbrida (Online + Presencial)
+                <h3 className="text-[40px] font-extrabold">
+                  Entrenamiento Personalizado – Modalidad Híbrida (Online +
+                  Presencial)
                 </h3>
               </div>
-              <div className="flex small:flex-none justify-between items-start gap-4">
-                <div className="hidden small:block w-full h-auto overflow-hidden pb-3">
+              <div className="small:hidden flex small:flex-none gap-4">
+                <div className=" w-full h-auto overflow-hidden pb-3">
                   <img
                     className="rounded-md shadow-md"
-                    src="assets/img/service/1.jpg"
+                    src="assets/img/service/hibrida.jpg"
                     alt="image"
                   />
                 </div>
-                {/* <div className="md:w-1/2 small:w-full">
-                  <h3 className="text-[18px] text-main-color font-extrabold italic  pb-5 ">
-                    Entrená con confianza. Aprendé a moverte sin dolor. Construí
-                    una base fuerte
-                  </h3>
-                  <p className="text-[#55527C] font-medium w-fit text-[16px] pb-3">
-                    ¿Sos principiante y querés aprender a entrenar correctamente
-                    desde cero? <br />
-                    ¿Tenés molestias, una lesión previa o simplemente nunca
-                    encontraste un programa que te enseñe paso a paso?
+                <div>
+                  <p className=" text-main-color  text-[18px] pb-4">
+                    Diseñado para personas que están comenzando, tienen alguna
+                    lesión, están en recuperación postquirúrgica o simplemente
+                    desean un acompañamiento más cercano y personalizado.
                   </p>
-                  <p className="text-[#55527C] font-extrabold  text-sm w-fit text-[16px] ">
-                    StrongHuman es para vos.
-                  </p>
-                  <p className="text-[#55527C] font-medium w-fit text-[16px] pt-3 pb-4">
-                    Este programa fue creado para quienes quieren entrenar con
-                    seguridad, buena técnica y sin miedo a lesionarse.
+                  <p className=" text-main-color  text-[18px]">
+                    Combinamos lo mejor del seguimiento digital con sesiones
+                    presenciales para que aprendas a moverte con seguridad,
+                    confianza y acompañamiento experto.{" "}
                   </p>
                 </div>
-                <div className="md:w-1/2 small:hidden h-[auto] overflow-hidden pb-4">
+              </div>
+
+              <div className="hidden small:block w-full">
+                <div className=" w-full h-auto overflow-hidden pb-3">
                   <img
                     className="rounded-md shadow-md"
-                    src="assets/img/service/1.jpg"
+                    src="assets/img/service/hibrida.jpg"
                     alt="image"
                   />
                 </div>
-              </div>
-
-              <div>
-                <div className="md:flex small:flex-none">
-                  <div className="md:w-1/2 small:w-full">
-                    <h6 className=" elisc_tm_title  w-fit text-[18px] font-bold pt-3 pb-4">
-                      ¿Para quién es?
-                    </h6>
-                    <ul className="list-disc   text-main-color  list-inside  w-fit text-[16px] pb-9">
-                      <li className="pb-2">
-                        Principiantes que quieren aprender a entrenar
-                        correctamente desde cero.
-                      </li>
-                      <li className="pb-2">
-                        Personas con lesiones previas o molestias que quieren
-                        volver a entrenar sin miedo a lesionarse.
-                      </li>
-                      <li className="pb-2">
-                        Quienes sienten inseguridad o falta de conocimiento al
-                        entrenar{" "}
-                      </li>
-                      <li className="pb-2">
-                        Personas que nunca encontraron un programa que les
-                        enseñe paso a paso.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="md:w-1/2 small:w-full">
-                    <h6 className=" elisc_tm_title w-fit text-[18px] font-bold pt-3 pb-4">
-                      ¿Qué vas a lograr?
-                    </h6>
-                    <ul className="list-disc list-inside    text-main-color  w-fit text-[16px] pb-9">
-                      <li className="pb-2">
-                        Entender los principios de un entrenamiento seguro y
-                        efectivo
-                      </li>
-
-                      <li className="pb-2">
-                        Mejorar tu movilidad, fuerza y control del cuerpo{" "}
-                      </li>
-                      <li className="pb-2">
-                        Ganar confianza y autonomía al entrenar{" "}
-                      </li>
-                      <li className="pb-2">
-                        Sentirte fuerte, libre de dolor y motivado a seguir{" "}
-                      </li>
-                    </ul>
-                  </div>
+                <div>
+                  <p className=" text-main-color  text-[18px] pb-4">
+                    Diseñado para personas que están comenzando, tienen alguna
+                    lesión, están en recuperación postquirúrgica o simplemente
+                    desean un acompañamiento más cercano y personalizado.
+                  </p>
+                  <p className=" text-main-color  text-[18px]">
+                    Combinamos lo mejor del seguimiento digital con sesiones
+                    presenciales para que aprendas a moverte con seguridad,
+                    confianza y acompañamiento experto.{" "}
+                  </p>
                 </div>
-              </div>
+                <div className="pt-4 pb-4">
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                    ¿Qué incluye tu plan mensual?{" "}
+                  </h6>
+                  <ul className="list-none list-inside  w-fit text-[18px] pb-9">
+                    <li className=" pb-2">
+                      📍&nbsp; <strong>2 sesiones presenciales al mes</strong>{" "}
+                      <br />
+                      (sujeto a disponibilidad y ubicación en el GAM, Costa
+                      Rica).
+                    </li>
+                    <li className="pb-2">
+                      📲&nbsp;{" "}
+                      <strong>
+                        {" "}
+                        Acceso a la app de entrenamiento personalizada
+                      </strong>{" "}
+                      con rutinas adaptadas a tu condición.
+                    </li>
+                    <li className="pb-2">
+                      📹&nbsp; <strong> Seguimiento semanal:</strong> evaluación
+                      de tu progreso, revisión de técnica y ajustes al
+                      programa..
+                    </li>
+                    <li className="pb-2">
+                      📞 &nbsp;{" "}
+                      <strong>
+                        {" "}
+                        Resolución de dudas y soporte personalizado
+                      </strong>{" "}
+                      durante todo el proceso.
+                    </li>
+                    <li className="pb-2">
+                      💻&nbsp;<strong> Ajustes continuos</strong> a tu
+                      planificación conforme avanzás.
+                    </li>
+                  </ul>
+                </div>
 
-              <h6 className=" elisc_tm_title  text-main-color  w-fit text-[18px] font-bold pt-3 pb-4">
-                ¿Qué incluye StrongHuman?{" "}
-              </h6>
-              <p className=" text-main-color  text-[14px]">
-                Duración: 10 semanas
-              </p>
-              <p className=" text-main-color  text-[14px]">
-                Modalidad: Online + 3 Talleres Presenciales Grupales
-              </p>
-              <ul className="list-disc list-inside  w-fit text-[16px] pb-9">
-                <li className="pb-2">✔️ Entrevista inicial online</li>
-                <li className="pb-2">
-                  ✔️ Programación personalizada con app y videos paso a paso
-                </li>
-                <li className="pb-2">✔️ 2 asesorías online individuales</li>
-                <li className="pb-2">✔️ Acceso a comunidad StrongHuman</li>
-                <li className="pb-2">✔️ 3 talleres presenciales grupales.</li>
-              </ul>
-              <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
-                ¿Cuándo empieza?
-              </h6>
-              <p className=" text-main-color  font-bold text-[16px] pb-2">
-                Fecha próxima generación: Inicio: 9 de Junio 2025
-              </p>
-              <p className=" text-main-color  text-[14px] pb-2">
-                ¿Querés aprender a entrenar bien desde el inicio?
-              </p>
-              <p className=" text-main-color  text-[14px] pb-2">
-                Si quieres más información y ser parte de STRONG HUMAN.
-              </p> */}
+                <div className="pb-4">
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                    ¿Para quién es ideal esta modalidad?
+                  </h6>
+                  <ul className="list-disc list-inside  w-fit text-[18px] pb-9">
+                    <li className=" pb-2">
+                      Personas en etapa{" "}
+                      <strong>inicial de entrenamiento</strong> que necesitan
+                      guía cercana.
+                    </li>
+                    <li className="pb-2">
+                      Quienes tienen{" "}
+                      <strong> lesiones previas o dolores crónicos </strong> y
+                      quieren entrenar con seguridad.
+                    </li>
+                    <li className="pb-2">
+                      Personas en{" "}
+                      <strong>
+                        proceso de readaptación física post lesión o cirugía.
+                      </strong>
+                    </li>
+                    <li className="pb-2">
+                      Quienes se sienten más cómodos con{" "}
+                      <strong>un acompañamiento presencial periódico.</strong>
+                    </li>
+                  </ul>
+
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
+                    💰&nbsp;Inversión mensual: $200 USD
+                  </h6>
+                </div>
               </div>
             </div>
           </div>

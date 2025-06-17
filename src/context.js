@@ -76,7 +76,8 @@ const state = (props) => {
       { id: 1, name: "Inicio", href: "home" },
       { id: 2, name: "Servicios", href: "service" },
       { id: 3, name: "Sobre mi", href: "about" },
-      { id: 6, name: "Contacto", href: "contact" },
+      { id: 4, name: "Testimonios", href: "testimonial" },
+      { id: 5, name: "Contacto", href: "contact" },
     ],
   };
   const [state, dispatch] = useReducer(reducer, initialState);
