@@ -26,6 +26,14 @@ const services = [
     description:
       "Dirigido a personas principiantes, con alguna lesión física, recuperación post quirúrgica",
   },
+  {
+    id: 4,
+    name: "Entrenamiento Personal Presencial –",
+    image: "assets/img/service/4.jpg",
+    link: "#personal",
+    description:
+      " Cada sesión está diseñada para vos, con un enfoque técnico que garantiza seguridad, progreso y resultados reales.",
+  },
 ];
 const Services = () => {
   const { modalToggle } = useContext(context);
@@ -47,7 +55,7 @@ const Services = () => {
               <ul className="ml-[-30px] flex flex-wrap">
                 {services.map((service) => (
                   <li
-                    className="mb-[30px] pl-[30px] w-1/3 float-left"
+                    className="mb-[30px] pl-[30px] w-1/2 float-left"
                     key={service.id}
                   >
                     <img
@@ -148,7 +156,7 @@ const Services = () => {
                     <h6 className=" elisc_tm_title  w-fit text-[18px] font-bold pt-3 pb-4">
                       ¿Para quién es?
                     </h6>
-                    <ul className="list-disc   text-main-color  list-inside  w-fit text-[18px] pb-9">
+                    <ul className="list-disc   text-main-color  list-inside  w-fit mr-[28px] text-[18px] pb-9">
                       <li className="pb-2">
                         Principiantes que quieren aprender a entrenar
                         correctamente desde cero.
@@ -238,7 +246,18 @@ const Services = () => {
                   Entrenamiento Personalizado 100% Online
                 </h3>
               </div>
-              <div className="w-full">
+              <div className="w-full flex">
+                <div className="w-1/2 "
+                >
+
+<div className="w-1/2">
+                  <img
+                    className="rounded-md shadow-md"
+                    src="assets/img/service/online.jpg"
+                    alt="image"
+                  />
+                </div>
+                </div>
                 <h6 className=" elisc_tm_title  text-main-color  w-fit text-[18px] font-bold pt-3 pb-4">
                   ¿Para quién es este servicio?
                 </h6>
@@ -246,7 +265,7 @@ const Services = () => {
                   Para personas con experiencia intermedia o avanzada que buscan
                   resultados reales, que tienen claros sus objetivos como:
                 </p>
-              </div>
+            
 
               <div className="flex small:flex-none justify-between items-start gap-4">
                 <div className="w-1/2 small:w-full">
@@ -277,13 +296,7 @@ const Services = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-1/2 small:hidden">
-                  <img
-                    className="rounded-md shadow-md"
-                    src="assets/img/service/online.jpg"
-                    alt="image"
-                  />
-                </div>
+
               </div>
               <div className="hidden small:w-full small:block">
                 <img
@@ -342,6 +355,8 @@ const Services = () => {
                 >
                   Llenar Formulario
                 </a>
+                
+              </div>
               </div>
             </div>
           </div>
@@ -360,10 +375,10 @@ const Services = () => {
                   Presencial)
                 </h3>
               </div>
-              <div className="small:hidden flex small:flex-none gap-4">
+              <div className="flex small:flex-none gap-4">
                 <div className=" w-full h-auto overflow-hidden pb-3">
                   <img
-                    className="rounded-md shadow-md"
+                    className=" small:hidden  rounded-md shadow-md h-[auto] w-3/4"
                     src="assets/img/service/hibrida.jpg"
                     alt="image"
                   />
@@ -382,15 +397,113 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className="hidden small:block w-full">
-                <div className=" w-full h-auto overflow-hidden pb-3">
+              <div className="">
+                <div className=" hidden small:block  w-full h-auto overflow-hidden pb-3">
                   <img
                     className="rounded-md shadow-md"
                     src="assets/img/service/hibrida.jpg"
                     alt="image"
                   />
                 </div>
+                <div className="pt-4 pb-4">
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                    ¿Qué incluye tu plan mensual?{" "}
+                  </h6>
+                  <ul className="list-none list-inside  w-fit text-[18px] pb-9">
+                    <li className=" pb-2">
+                      📍&nbsp; <strong>2 sesiones presenciales al mes</strong>{" "}
+                      <br />
+                      (sujeto a disponibilidad y ubicación en el GAM, Costa
+                      Rica).
+                    </li>
+                    <li className="pb-2">
+                      📲&nbsp;{" "}
+                      <strong>
+                        {" "}
+                        Acceso a la app de entrenamiento personalizada
+                      </strong>{" "}
+                      con rutinas adaptadas a tu condición.
+                    </li>
+                    <li className="pb-2">
+                      📹&nbsp; <strong> Seguimiento semanal:</strong> evaluación
+                      de tu progreso, revisión de técnica y ajustes al
+                      programa..
+                    </li>
+                    <li className="pb-2">
+                      📞 &nbsp;{" "}
+                      <strong>
+                        {" "}
+                        Resolución de dudas y soporte personalizado
+                      </strong>{" "}
+                      durante todo el proceso.
+                    </li>
+                    <li className="pb-2">
+                      💻&nbsp;<strong> Ajustes continuos</strong> a tu
+                      planificación conforme avanzás.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="pb-4">
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                    ¿Para quién es ideal esta modalidad?
+                  </h6>
+                  <ul className="list-disc list-inside  w-fit text-[18px] pb-9">
+                    <li className=" pb-2">
+                      Personas en etapa{" "}
+                      <strong>inicial de entrenamiento</strong> que necesitan
+                      guía cercana.
+                    </li>
+                    <li className="pb-2">
+                      Quienes tienen{" "}
+                      <strong> lesiones previas o dolores crónicos </strong> y
+                      quieren entrenar con seguridad.
+                    </li>
+                    <li className="pb-2">
+                      Personas en{" "}
+                      <strong>
+                        proceso de readaptación física post lesión o cirugía.
+                      </strong>
+                    </li>
+                    <li className="pb-2">
+                      Quienes se sienten más cómodos con{" "}
+                      <strong>un acompañamiento presencial periódico.</strong>
+                    </li>
+                  </ul>
+
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
+                    💰&nbsp;Inversión mensual: $200 USD
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionContainer>
+      <SectionContainer name="personal" id="personal">
+        <div className="elisc_tm_services w-full float-left  pb-[60px]">
+          <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
+            <div className="elisc_tm_service_title w-full float-left">
+              <div className="elisc_tm_title w-full  pb-[40px] small:pb-[20px]">
+                <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
+                  - Servicios
+                </span>
+                <h3 className="text-[40px] font-extrabold">
+                Entrenamiento Personal Presencial – Paquetes Mensuales 
+
+                </h3>
+              </div>
+              <div className="small:hidden flex small:flex-none gap-4">
+                <div className=" w-full h-auto overflow-hidden pb-3">
+                  <img
+                    className="rounded-md shadow-md"
+                    src="assets/img/service/personal.png"
+                    alt="image"
+                  />
+                </div>
                 <div>
+                <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                ¿Qué es el Entrenamiento Personal?</h6>
                   <p className=" text-main-color  text-[18px] pb-4">
                     Diseñado para personas que están comenzando, tienen alguna
                     lesión, están en recuperación postquirúrgica o simplemente
@@ -401,6 +514,19 @@ const Services = () => {
                     presenciales para que aprendas a moverte con seguridad,
                     confianza y acompañamiento experto.{" "}
                   </p>
+                </div>
+              </div>
+
+              <div className="w-full">
+                <div className="  hidden small:block  w-full h-auto overflow-hidden pb-3">
+                  <img
+                    className="rounded-md shadow-md"
+                    src="assets/img/service/personal.png"
+                    alt="image"
+                  />
+                </div>
+                <div>
+
                 </div>
                 <div className="pt-4 pb-4">
                   <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">

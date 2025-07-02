@@ -15,9 +15,11 @@ const About = () => {
                 <h3 className="font-extrabold text-[40px]">
                  Hola, ¡Soy <span className="text-blue-color">Naty!</span>
                 </h3>
-                {/* <h3 className="name font-extrabold text-[40px]">
-                  Natalia Fonseca
-                </h3> */}
+
+                <div className="pt-[50px] pb-[20px]">
+              <img className="rounded-md shadow-md w-2/3 small:w-full" src="assets/img/about/naty.jpg" alt="image" />
+            </div>
+
                 <span className="job font-semibold text-[20px] text-white-color">
                   <span className="cd-headline rotate-1">
                     {" "}
@@ -27,13 +29,11 @@ const About = () => {
                   </span>
                 </span>
               </div>
-              <div className="elisc_tm_button transition_link">
-                <a href="#contact">Hablemos</a>
-              </div>
+
             </div>
             <div className="right w-[60%]">
               <div className="text w-full float-left mb-[44px]">
-
+                <p></p>
                 <p  className="mb-[30px]">
                 Lic. en Fisioterapia con Postgrado en Entrenamiento Personal, Coach Strong First con más de 15 años de experiencia en el campo del entrenamiento y la readaptación física a través del movimiento.
 A lo largo de mi carrera, he integrado la fisioterapia con el entrenamiento físico como herramientas clave para la prevención, recuperación y optimización del
@@ -45,6 +45,9 @@ enfoque seguro, personalizado y consciente.<br/>
 Con el tiempo, he observado cómo muchas lesiones y dolores crónicos tienen su origen en deficiencias en la mecánica del movimiento. Esta comprensión me llevó a especializarme en el enfoque de readaptación física a través del ejercicio terapéutico, combinando el conocimiento clínico con el trabajo físico funcional.
 
                 </p>
+                <div className="elisc_tm_button transition_link">
+                <a href="#contact">Hablemos</a>
+              </div>
               </div>
             </div>
           </div>

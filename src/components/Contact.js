@@ -59,7 +59,7 @@ const Contact = () => {
                 Completa este breve formulario y agendamos tu sesión virtual totalmente gratis.
                 </p>
                 <ul>
-                  <li className="mb-[8px] w-full float-left">
+                  <li className="my-[12px] w-full text-xl float-left">
                   <a
                       className="text-dark-color font-semibold font-inter inline-block relative"
                       href="https://forms.gle/rfkKz1Xn5azZZWky9"

@@ -18,7 +18,7 @@ const Home = () => {
                 </h3>
 
               </div>
-              <div className="subtitle wfll max-w-[80%] float-left mb-[40px]">
+              <div className="subtitle wfll text-[16px] max-w-[80%] float-left mb-[40px]">
                 <p>
                 Creo en la fuerza que transforma, en el poder de moverse sin dolor, y en la seguridad de un entrenamiento bien guiado y con resultados que perduran.                </p>
               </div>
