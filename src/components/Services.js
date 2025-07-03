@@ -151,7 +151,7 @@ const Services = () => {
               </div>
 
               <div>
-                <div className=" small:flex-none small:block flex ">
+                <div className="small:block flex ">
                   <div className="w-1/2 small:w-full">
                     <h6 className=" elisc_tm_title  w-fit text-[18px] font-bold pt-3 pb-4">
                       ¿Para quién es?
@@ -246,18 +246,24 @@ const Services = () => {
                   Entrenamiento Personalizado 100% Online
                 </h3>
               </div>
-              <div className="w-full flex">
-                <div className="w-1/2 "
-                >
-
-<div className="w-1/2">
-                  <img
-                    className="rounded-md shadow-md"
-                    src="assets/img/service/online.jpg"
-                    alt="image"
-                  />
+              <div className="w-full flex gap-6 small:flex-none small:block">
+                <div className="w-1/2  small:w-full">
+                  <div className="small:w-full block ">
+                    <img
+                      className="rounded-md shadow-md"
+                      src="assets/img/service/online.jpg"
+                      alt="image"
+                    />
+                  </div>
+                  {/* <div className="hidden small:w-full small:block">
+                    <img
+                      className="rounded-md shadow-md"
+                      src="assets/img/service/online.jpg"
+                      alt="image"
+                    />
+                  </div> */}
                 </div>
-                </div>
+                <div className="w-1/2  small:w-full">
                 <h6 className=" elisc_tm_title  text-main-color  w-fit text-[18px] font-bold pt-3 pb-4">
                   ¿Para quién es este servicio?
                 </h6>
@@ -265,45 +271,36 @@ const Services = () => {
                   Para personas con experiencia intermedia o avanzada que buscan
                   resultados reales, que tienen claros sus objetivos como:
                 </p>
-            
-
-              <div className="flex small:flex-none justify-between items-start gap-4">
-                <div className="w-1/2 small:w-full">
-                  <ul className="list-none  list-inside    text-main-color  w-fit text-[18px] pb-9 ">
-                    <li className="pb-2">
-                      ✅ Aumentar fuerza y masa muscular con un plan bien
-                      estructurado.
-                    </li>
-                    <li className="pb-2">
-                      ✅ Mejorar movilidad y control corporal para entrenar con
-                      mayor calidad y sin dolor.
-                    </li>
-                    <li className="pb-2">
-                      ✅ Mejorar composición corporal: bajar grasa, aumento de
-                      masa muscular.
-                    </li>
-                    <li className="pb-2">
-                      ✅ Dominar técnicas complejas como el entrenamiento con
-                      pesas libres, kettlebells o ejercicios funcionales.
-                    </li>
-                    <li className="pb-2">
-                      ✅ Dominar técnicas complejas como el entrenamiento con
-                      pesas libres, kettlebells o ejercicios funcionales.
-                    </li>
-                    <li className="pb-2">
-                      ✅ Entrenar con estrategia y propósito, guiado por una
-                      profesional que entiende tu cuerpo y tus metas.{" "}
-                    </li>
-                  </ul>
                 </div>
-
               </div>
-              <div className="hidden small:w-full small:block">
-                <img
-                  className="rounded-md shadow-md"
-                  src="assets/img/service/online.jpg"
-                  alt="image"
-                />
+              <div className="w-full small:w-full">
+            
+                <ul className="list-none  list-inside  pt-4  text-main-color  w-fit text-[18px] pb-9 ">
+                  <li className="pb-2">
+                    ✅ Aumentar fuerza y masa muscular con un plan bien
+                    estructurado.
+                  </li>
+                  <li className="pb-2">
+                    ✅ Mejorar movilidad y control corporal para entrenar con
+                    mayor calidad y sin dolor.
+                  </li>
+                  <li className="pb-2">
+                    ✅ Mejorar composición corporal: bajar grasa, aumento de
+                    masa muscular.
+                  </li>
+                  <li className="pb-2">
+                    ✅ Dominar técnicas complejas como el entrenamiento con
+                    pesas libres, kettlebells o ejercicios funcionales.
+                  </li>
+                  <li className="pb-2">
+                    ✅ Dominar técnicas complejas como el entrenamiento con
+                    pesas libres, kettlebells o ejercicios funcionales.
+                  </li>
+                  <li className="pb-2">
+                    ✅ Entrenar con estrategia y propósito, guiado por una
+                    profesional que entiende tu cuerpo y tus metas.{" "}
+                  </li>
+                </ul>
               </div>
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
                 ¿Qué incluye tu plan mensual?{" "}
@@ -355,8 +352,6 @@ const Services = () => {
                 >
                   Llenar Formulario
                 </a>
-                
-              </div>
               </div>
             </div>
           </div>
@@ -489,8 +484,7 @@ const Services = () => {
                   - Servicios
                 </span>
                 <h3 className="text-[40px] font-extrabold">
-                Entrenamiento Personal Presencial – Paquetes Mensuales 
-
+                  Entrenamiento Personal Presencial – Paquetes Mensuales
                 </h3>
               </div>
               <div className="small:hidden flex small:flex-none gap-4">
@@ -502,8 +496,9 @@ const Services = () => {
                   />
                 </div>
                 <div>
-                <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
-                ¿Qué es el Entrenamiento Personal?</h6>
+                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                    ¿Qué es el Entrenamiento Personal?
+                  </h6>
                   <p className=" text-main-color  text-[18px] pb-4">
                     Diseñado para personas que están comenzando, tienen alguna
                     lesión, están en recuperación postquirúrgica o simplemente
@@ -525,9 +520,7 @@ const Services = () => {
                     alt="image"
                   />
                 </div>
-                <div>
-
-                </div>
+                <div></div>
                 <div className="pt-4 pb-4">
                   <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
                     ¿Qué incluye tu plan mensual?{" "}
