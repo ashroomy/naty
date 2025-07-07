@@ -453,7 +453,7 @@ body::-webkit-scrollbar-thumb {
   height: 1.5px;
   left: 0px;
   bottom: 5px;
-  background-color: var(--dark-color);
+  /* background-color: var(--dark-color); */
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
