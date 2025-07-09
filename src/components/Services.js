@@ -497,9 +497,9 @@ const Services = () => {
                 </h3>
               </div>
               <div className="flex small:flex-none small:block gap-4">
-                <div className=" w-full h-auto overflow-hidden pb-3">
+                <div className="w-1/2 small:w-full h-auto overflow-hidden pb-3">
                   <img
-                    className="rounded-md shadow-md"
+                    className="rounded-md shadow-md "
                     src="assets/img/service/personal.png"
                     alt="image"
                   />
@@ -587,9 +587,8 @@ const Services = () => {
                     pondré en contacto contigo para agendar una cita inicial
                     virtual 100% gratuita.{" "}
                   </p>
-
                   <div
-                    className="elisc_tm_button transition_link"
+                    className="elisc_tm_button transition_link float-none"
                     data-style="border"
                   >
                     <a
@@ -600,9 +599,154 @@ const Services = () => {
                       Llenar Formulario
                     </a>
                   </div>
-                  <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
-                    💰&nbsp;Inversión mensual: $200 USD
-                  </h6>
+                  <div className="w-full mt-[34px]">
+                    <div>
+                      <h3 className="text-[38px] font-extrabold py-4">
+                        💥 Entrenamiento Personal en Pareja o Grupos Pequeños
+                      </h3>
+                      <p className="text-[#55527C] font-bold w-fit text-[18px] pt-3 pb-4">
+                        Entrená acompañado, con el enfoque técnico y
+                        personalizado de un entrenamiento individual.{" "}
+                      </p>
+                      <p className="text-main-color w-fit text-[18px] pt-3 pb-4">
+                        Esta modalidad está diseñada para quienes quieren
+                        compartir su proceso con alguien más (pareja, amigos o
+                        familiares), manteniendo una guía profesional,
+                        corrección técnica y progresión estructurada.
+                      </p>
+                    </div>
+
+                    <div className="w-full gap-5 flex small:block small:flex-none">
+                      <div className="w-1/2 small:w-full">
+                        <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                          ¿Qué incluye este plan?
+                        </h6>
+                        <ul className="list-none list-inside text-[18px] pb-9 w-full">
+                          <li className=" pb-4">
+                            <strong>
+                              {" "}
+                              📝&nbsp;Evaluación inicial grupal e individual
+                            </strong>
+                            <br />
+                            Se identifican metas compartidas e individuales,
+                            nivel físico y necesidades de cada participante.
+                          </li>
+                          <li className="pb-4">
+                            🏋️‍♀️&nbsp;
+                            <strong>
+                              Sesiones presenciales de entrenamiento
+                              personalizado en grupo
+                            </strong>{" "}
+                            <br />
+                            Hasta 5 personas por grupo. Cada quien trabaja a su
+                            ritmo, con ejercicios adaptados a su nivel.
+                          </li>
+                          <li className="pb-4">
+                            📲&nbsp;
+                            <strong>
+                              {" "}
+                              Acceso a programación complementaria vía app
+                              (opcional){" "}
+                            </strong>{" "}
+                            <br />
+                            Para reforzar hábitos, movilidad o rutinas entre
+                            sesiones.
+                          </li>
+                          <li className="pb-4">
+                            🔁&nbsp;
+                            <strong>
+                              Ajustes continuos en base al progreso
+                            </strong>{" "}
+                            <br />
+                            entrena en grupo, el seguimiento es personalizado.
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="w-1/2 small:w-full">
+                        <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                          🎯 Beneficios de entrenar en pareja o grupo:{" "}
+                        </h6>
+                        <ul className="list-none list-inside text-[18px] pb-9 w-full">
+                          <li className=" pb-4">
+                            ✅&nbsp;Más motivación y adherencia gracias al
+                            compromiso grupal.
+                          </li>
+                          <li className=" pb-4">
+                            ✅&nbsp; Corrección técnica y acompañamiento
+                            profesional en cada sesión.
+                          </li>
+                          <li className=" pb-4">
+                            ✅&nbsp;Costo más accesible comparado con el
+                            entrenamiento individual.
+                          </li>
+                          <li className=" pb-4">
+                            ✅&nbsp;Ideal para quienes disfrutan entrenar con
+                            compañía sin perder calidad.
+                          </li>
+                          <li className=" pb-4">
+                            ✅&nbsp;Progresiones seguras y personalizadas dentro
+                            del mismo grupo.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
+                        👥 ¿Para quién es esta modalidad?{" "}
+                      </h6>
+                      <ul className="list-none list-inside text-[18px] pb-5 w-full">
+                        <li className=" pb-4">
+                          ✔️ Parejas o amigos que quieren entrenar juntos con
+                          una guía profesional.
+                        </li>
+                        <li className=" pb-4">
+                          ✔️ Grupos de 3 a 5 personas con objetivos similares
+                          (salud, fuerza, movilidad, recomposición corporal).
+                        </li>
+                        <li className=" pb-4">
+                          ✔️ Personas que buscan una opción más económica sin
+                          sacrificar el acompañamiento técnico.
+                        </li>
+                        <li className=" pb-4">
+                          {" "}
+                          ✔️ Equipos que se motivan mutuamente a mantener la
+                          constancia.
+                        </li>
+                      </ul>
+                      <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
+                        📍 Disponible en sedes de Multispa (consultar horarios y
+                        ubicación).
+                      </h6>
+                      <p className="text-main-color w-fit text-[18px] pt-3 pb-4">
+                        <i>
+                          💰 La inversión mensual se calcula según la cantidad
+                          de personas y frecuencia de entrenamiento.
+                        </i>
+                      </p>
+                      <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
+                        📲 ¿Quieren comenzar a entrenar juntos?
+                      </h6>
+                      <p className="text-main-color w-fit text-[18px] pt-3 pb-4">
+                        Escribime para armar su grupo o agendar una sesión de
+                        prueba.
+                      </p>
+                      <a
+                        href="https://forms.gle/rfkKz1Xn5azZZWky9"
+                        target="_blank"
+                        refer="noopener noreferrer"
+                      >
+                        <h5                       className=" flex gap-4 w-fit"
+                        >
+                          Contáctame por{" "}
+                          <img
+                            className=""
+                            src="assets/img/WA.png"
+                            alt="image"
+                          />
+                        </h5>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
