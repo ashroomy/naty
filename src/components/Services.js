@@ -731,12 +731,11 @@ const Services = () => {
                         prueba.
                       </p>
                       <a
-                        href="https://forms.gle/rfkKz1Xn5azZZWky9"
+                        href="http://wa.me/+50688820971"
                         target="_blank"
                         refer="noopener noreferrer"
                       >
-                        <h5                       className=" flex gap-4 w-fit"
-                        >
+                        <h5 className=" flex gap-1 w-fit items-center">
                           Contáctame por{" "}
                           <img
                             className=""
