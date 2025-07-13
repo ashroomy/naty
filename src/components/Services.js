@@ -376,7 +376,7 @@ const Services = () => {
                 <div className="w-1/2   small:w-full pb-3">
                   <img
                     className="rounded-md shadow-md h-[auto]"
-                    src="assets/img/service/hibrida.jpg"
+                    src="assets/img/service/hibrida.png"
                     alt="image"
                   />
                 </div>
