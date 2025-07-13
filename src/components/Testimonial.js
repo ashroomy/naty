@@ -7,7 +7,7 @@ const Testimonial = () => {
     <SectionContainer name="testimonial" className="mb-[40px]">
       <div className="elisc_tm_testimonial_wrapper w-full float-left mb-[120px]">
         <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
-          <div className="elisc_tm_testimonials w-full float-left bg-[#FFF5F6] pt-[100px] pr-[150px] pb-[105px] pl-[100px] small:px-[40px]">
+          <div className="elisc_tm_testimonials w-full float-left bg-[#FFF5F6] pt-[50px] pr-[100px] pb-[50px] pl-[100px] small:px-[40px] mb-[24px]">
             <div className="elisc_tm_title w-full float-left text-center">
               <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
                 - Testimonios
@@ -34,12 +34,7 @@ const Testimonial = () => {
                     </p>
                   </div>
                   <div className="short w-auto flex items-center justify-center mb-[5px]">
-                    {/* <div className="image relative w-[60px] h-[60px] rounded-full">
-                      <div
-                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center rounded-full"
-                        data-img-url="assets/img/testimonials/1.jpg"
-                      />
-                    </div> */}
+
                     <div className="detail text-left pl-[18px]">
                       <h3 className="text-[30px] font-medium">
                         {" "}

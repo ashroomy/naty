@@ -264,7 +264,7 @@ const Services = () => {
                   <div className="small:w-full block ">
                     <img
                       className="rounded-md shadow-md"
-                      src="assets/img/service/online.jpg"
+                      src="assets/img/service/online.png"
                       alt="image"
                     />
                   </div>
@@ -282,9 +282,9 @@ const Services = () => {
               </div>
               <div className="w-full small:w-full">
                 <ul className="list-none  list-inside  pt-4  text-main-color  w-fit text-[18px] pb-9 ">
-                  <li className="pb-2">
-                    ✅ Aumentar fuerza y masa muscular con un plan bien
-                    estructurado.
+                                    <li className="pb-2">
+                    ✅ Entrenar con estrategia y propósito, guiado por una
+                    profesional que entiende tu cuerpo y tus metas.{" "}
                   </li>
                   <li className="pb-2">
                     ✅ Mejorar movilidad y control corporal para entrenar con
@@ -296,16 +296,9 @@ const Services = () => {
                   </li>
                   <li className="pb-2">
                     ✅ Dominar técnicas complejas como el entrenamiento con
-                    pesas libres, kettlebells o ejercicios funcionales.
+                    pesas libres, aprender técnica sobre ejercicios con peso libre: barras, ketlebells.
                   </li>
-                  <li className="pb-2">
-                    ✅ Dominar técnicas complejas como el entrenamiento con
-                    pesas libres, kettlebells o ejercicios funcionales.
-                  </li>
-                  <li className="pb-2">
-                    ✅ Entrenar con estrategia y propósito, guiado por una
-                    profesional que entiende tu cuerpo y tus metas.{" "}
-                  </li>
+
                 </ul>
               </div>
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[20px] font-bold pt-3 pb-4">
@@ -569,7 +562,7 @@ const Services = () => {
                     </li>
                   </ul>
                   <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
-                    🗓️&nbsp;lanes disponibles: Precios oscilan entre
+                    🗓️&nbsp;Planes disponibles: Precios oscilan entre
                   </h6>
                   <p className=" text-main-color  text-[20px] pb-3">
                     {" "}
@@ -730,20 +723,19 @@ const Services = () => {
                         Escribime para armar su grupo o agendar una sesión de
                         prueba.
                       </p>
-                      <a
-                        href="http://wa.me/+50688820971"
-                        target="_blank"
-                        refer="noopener noreferrer"
-                      >
-                        <h5 className=" flex gap-1 w-fit items-center">
-                          Contáctame por{" "}
-                          <img
-                            className=""
-                            src="assets/img/WA.png"
-                            alt="image"
-                          />
-                        </h5>
-                      </a>
+                      <div className=" flex w-full gap-1">
+                    <img
+                      className=" h-[30px] "
+                      src="assets/img/WA.png"
+                      alt="image"
+                    />
+                    <a
+                      className="text-[#130F49] font-semibold text-[18px]"
+                      href="http://wa.me/+50688820971"
+                    >
+                      +506 8882 0971
+                    </a>
+                  </div>
                     </div>
                   </div>
                 </div>
