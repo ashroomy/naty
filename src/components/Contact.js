@@ -51,16 +51,18 @@ const Contact = () => {
                 <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
                   - ¡Hablemos!
                 </span>
-                <h3 className="text-[40px] font-extrabold">El primer paso es entender tus necesidades.
+                <h3 className="text-[40px] font-extrabold">
+                  El primer paso es entender tus necesidades.
                 </h3>
               </div>
               <div className="text w-full float-left mt-[20px] mb-[40px]">
                 <p>
-                Completa este breve formulario y agendamos tu sesión virtual totalmente gratis.
+                  Completa este breve formulario y agendamos tu sesión virtual
+                  totalmente gratis.
                 </p>
                 <ul>
                   <li className="my-[12px] w-full text-xl float-left">
-                  <a
+                    <a
                       className="text-dark-color font-semibold font-inter inline-block relative"
                       href="https://forms.gle/rfkKz1Xn5azZZWky9"
                       target="_blank"
@@ -70,36 +72,29 @@ const Contact = () => {
                     </a>
                   </li>
                 </ul>
-
               </div>
               <div className="info w-full float-left">
                 <ul className="text-decoration-none">
                   <li className="mb-[8px] w-full flex gap 2">
-                  <img
+                    <img
                       className=" h-[30px] "
                       src="assets/img/WA.png"
                       alt="image"
                     />
                     <a
-                      className="text-dark-color font-semibold font-inter inline-block relative"
+                      className="text-decoration-none text-dark-color font-semibold font-inter inline-block relative"
                       href="http://wa.me/+50688820971"
                     >
-                        Contactame por WhatsApp
+                      Contactame por WhatsApp
                     </a>
                   </li>
-             
-                  <li className="w-full float-left">
-                    <a
-                      className="href_location text-dark-color font-semibold font-inter inline-block relative"
-                      href="#"
-                    >
-                     📍 Alajuela, Costa Rica
-                    </a>
+
+                  <li className="w-full float-left text-decoration-none href_location text-dark-color font-semibold font-inter inline-block relative">
+                    📍 Alajuela, Costa Rica
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </div>
