@@ -39,7 +39,7 @@ const Home = () => {
               <div className="info w-full float-left">
                 <ul className="relative">
                   <li className="pl-[15px] flex w-full gap-1">
-                    <img
+                  <img
                       className=" h-[30px] "
                       src="assets/img/WA.png"
                       alt="image"
@@ -48,8 +48,9 @@ const Home = () => {
                       className="text-[#130F49] font-semibold text-[18px]"
                       href="http://wa.me/+50688820971"
                     >
-                      +506 8882 0971
+                      Contactame por WhatsApp
                     </a>
+               
                   </li>
                   <li className="pl-[15px]">
                     <a

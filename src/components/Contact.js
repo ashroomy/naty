@@ -73,7 +73,7 @@ const Contact = () => {
 
               </div>
               <div className="info w-full float-left">
-                <ul>
+                <ul className="text-decoration-none">
                   <li className="mb-[8px] w-full flex gap 2">
                   <img
                       className=" h-[30px] "
@@ -84,7 +84,7 @@ const Contact = () => {
                       className="text-dark-color font-semibold font-inter inline-block relative"
                       href="http://wa.me/+50688820971"
                     >
-                      +506 88820971
+                        Contactame por WhatsApp
                     </a>
                   </li>
              
@@ -93,7 +93,7 @@ const Contact = () => {
                       className="href_location text-dark-color font-semibold font-inter inline-block relative"
                       href="#"
                     >
-                      Alajuela, Costa Rica
+                     📍 Alajuela, Costa Rica
                     </a>
                   </li>
                 </ul>

@@ -733,7 +733,7 @@ const Services = () => {
                       className="text-[#130F49] font-semibold text-[18px]"
                       href="http://wa.me/+50688820971"
                     >
-                      +506 8882 0971
+                      Contactame por WhatsApp
                     </a>
                   </div>
                     </div>
