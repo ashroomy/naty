@@ -295,8 +295,7 @@ const Services = () => {
                     masa muscular.
                   </li>
                   <li className="pb-2">
-                    ✅ Dominar técnicas complejas como el entrenamiento con
-                    pesas libres, aprender técnica sobre ejercicios con peso libre: barras, ketlebells.
+                    ✅ Dominar técnicas complejas como entrenamiento con peso libre: barras, kettlebells y peso corporal.
                   </li>
 
                 </ul>
