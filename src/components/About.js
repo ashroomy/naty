@@ -13,7 +13,7 @@ const About = () => {
                   -  Mucho Gusto!
                 </span> */}
                 <h3 className="font-extrabold text-[40px]">
-                 Hola, ¡Soy <span className="text-blue-color">Naty!</span>
+                  ¡Bienvenidos soy <span className="text-blue-color">Naty!</span>
                 </h3>
 
                 <div className="pt-[50px] pb-[20px]">
@@ -33,16 +33,18 @@ const About = () => {
             </div>
             <div className="right w-[60%]">
               <div className="text w-full float-left mb-[44px]">
-                <p></p>
+
                 <p  className="mb-[30px]">
-                Lic. en Fisioterapia con Postgrado en Entrenamiento Personal, Coach Strong First con más de 15 años de experiencia en el campo del entrenamiento y la readaptación física a través del movimiento.
-A lo largo de mi carrera, he integrado la fisioterapia con el entrenamiento físico como herramientas clave para la prevención, recuperación y optimización del
-movimiento.
+               Durante más de 15 años he ayudado a personas a volver a moverse con confianza, sin dolor y con propósito.
+
                 </p>
                 <p className="mb-[30px]">
-Acompaño a personas en su proceso de volver a entrenar con confianza, ya sea en etapa de readaptación física o en busca de mejorar su rendimiento, siempre desde un
-enfoque seguro, personalizado y consciente.<br/>
-Con el tiempo, he observado cómo muchas lesiones y dolores crónicos tienen su origen en deficiencias en la mecánica del movimiento. Esta comprensión me llevó a especializarme en el enfoque de readaptación física a través del ejercicio terapéutico, combinando el conocimiento clínico con el trabajo físico funcional.
+Soy fisioterapeuta y entrenadora personal, apasionada por integrar la ciencia del movimiento con la fuerza consciente. Mi trabajo une lo mejor para acompañarte a recuperar, prevenir y mejorar tu rendimiento, desde un enfoque seguro y personalizado.
+<br/>
+                </p>
+                <p className="mb-[30px]">
+                  He visto cómo muchos dolores y lesiones nacen de una mecánica de movimiento alterada. Por eso, mi misión es guiarte a reconectar con tu cuerpo, aprender a moverte bien y construir fuerza para toda la vida.
+
 
                 </p>
                 <div className="elisc_tm_button transition_link">

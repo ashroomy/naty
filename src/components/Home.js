@@ -16,9 +16,7 @@ const Home = () => {
               </div>
               <div className="subtitle wfll text-[16px] max-w-[80%] float-left mb-[40px]">
                 <p>
-                  Creo en la fuerza que transforma, en el poder de moverse sin
-                  dolor, y en la seguridad de un entrenamiento bien guiado y con
-                  resultados que perduran.{" "}
+                  Te enseño paso a paso a moverte con seguridad y técnica, con la guía de un profesional, para construir fuerza para toda la vida.{" "}
                 </p>
               </div>
               <div className="buttons w-full float-left flex items-center mb-[150px]">
