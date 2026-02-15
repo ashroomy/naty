@@ -173,7 +173,7 @@ const Services = () => {
               </p>
 
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
-                💰&nbsp;Inversión mensual: $110 USD
+                💰&nbsp;Inversión mensual: $120 USD
               </h6>
 
               <p className=" text-main-color  text-[18px] pb-3">

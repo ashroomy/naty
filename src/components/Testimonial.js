@@ -13,7 +13,7 @@ const Testimonial = () => {
                 - Testimonios
               </span>
               <h3 className="text-[40px] font-extrabold">
-                
+
               </h3>
             </div>
             <div className="testimonials_list w-full float-left text-center mt-[43px]">
@@ -26,8 +26,9 @@ const Testimonial = () => {
                     <p className="text-[24px] leading-[40px] font-inter">
                       "He logrado hacer con mi cuerpo cosas que nunca creí
                       posibles."
-                      <br />
-                      Resultados: Mejoró su salud física y mental, desarrolló
+                      <br /> <br />
+
+                      Mejoró su salud física y mental, desarrolló
                       fuerza y aprendió a entrenar con técnica y seguridad. Lo
                       recomiendo por su calidad profesional y entrenamiento
                       personalizado adaptado a sus habilidades y limitaciones.
@@ -49,8 +50,8 @@ const Testimonial = () => {
                     <p className="text-[24px] leading-[40px] font-inter">
                       "He ganado fuerza, masa muscular y confianza en mi
                       cuerpo."
-                      <br />
-                      Resultados: Transformación física, aumento de fuerza,
+                      <br /> <br />
+                      Transformación física, aumento de fuerza,
                       resiliencia y constancia a lo largo del tiempo. Lo
                       recomiendo por su atención al detalle, seguimiento cercano
                       y rutinas bien estructuradas.
@@ -72,7 +73,9 @@ const Testimonial = () => {
                       "Los médicos me habían condicionado a pensar que no podía
                       entrenar con pesas… hoy me demostré que sí, he logrado
                       muchas cosas ya hasta corrí dos carreras y sigo
-                      avanzando." Resultados: Superó miedos profundamente
+                      avanzando."
+                      <br /> <br />
+                      Superó miedos profundamente
                       arraigados por su condición de columna. Ganó fuerza,
                       movilidad y, sobre todo, confianza en su cuerpo. Su
                       transformación más significativa fue mental: dejó atrás
@@ -93,7 +96,8 @@ const Testimonial = () => {
                   <div className="text mb-[33px]">
                     <p className="text-[24px] leading-[40px] font-inter">
                       "Aprendí a moverme mejor, no solo a hacer ejercicio."
-                      Resultados: Mejor técnica, mayor movilidad, conciencia del
+                      <br /> <br />
+                      Mejor técnica, mayor movilidad, conciencia del
                       cuerpo y mejor condición física. Lo recomiendo porque hay
                       educación del movimiento para quienes buscan entrenar con
                       conciencia y construir una base sólida.
@@ -112,7 +116,9 @@ const Testimonial = () => {
                   <div className="text mb-[33px]">
                     <p className="text-[24px] leading-[40px] font-inter">
                       "Di el primer paso en el ejercicio y me demostré que sí
-                      puedo, sin ponerme barreras mentales." Resultados: Más
+                      puedo, sin ponerme barreras mentales."
+                      <br /> <br />
+                      Más
                       confianza para moverse, nociones básicas de técnica y
                       consistencia en el ejercicio. Lo recomiendo por su
                       claridad, facilidad de aprender y acompañamiento cercano.
@@ -130,15 +136,17 @@ const Testimonial = () => {
                 <SwiperSlide>
                   <div className="text mb-[33px]">
                     <p className="text-[24px] leading-[40px] font-inter">
-                    "Ahora cada ejercicio tiene más sentido, y me siento más fuerte y motivada."
- Resultados: Más energía, mejor descanso, aumento de fuerza y consciencia postural.
- Lo recomiendo mucho para aprender desde cero, evitar lesiones y ver cambios reales con poco tiempo.
+                      "Ahora cada ejercicio tiene más sentido, y me siento más fuerte y motivada."
+                      Lo recomiendo mucho para aprender desde cero, evitar lesiones y ver cambios reales con poco tiempo.
+                    <br /> <br />
+                      Más energía, mejor descanso, aumento de fuerza y consciencia postural.
+
                     </p>
                   </div>
                   <div className="short w-auto flex items-center justify-center mb-[5px]">
                     <div className="detail text-left pl-[18px]">
                       <h3 className="text-[30px] font-medium">
-                      Edlin Abarca
+                        Edlin Abarca
                       </h3>
                     </div>
                   </div>
