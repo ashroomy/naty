@@ -28,7 +28,7 @@ const Testimonial = () => {
                       posibles."
                       <br /> <br />
 
-                      Mejoró su salud física y mental, desarrolló
+                      Resultados: Mejoró su salud física y mental, desarrolló
                       fuerza y aprendió a entrenar con técnica y seguridad. Lo
                       recomiendo por su calidad profesional y entrenamiento
                       personalizado adaptado a sus habilidades y limitaciones.
@@ -51,7 +51,7 @@ const Testimonial = () => {
                       "He ganado fuerza, masa muscular y confianza en mi
                       cuerpo."
                       <br /> <br />
-                      Transformación física, aumento de fuerza,
+                      Resultados: Transformación física, aumento de fuerza,
                       resiliencia y constancia a lo largo del tiempo. Lo
                       recomiendo por su atención al detalle, seguimiento cercano
                       y rutinas bien estructuradas.
@@ -75,7 +75,7 @@ const Testimonial = () => {
                       muchas cosas ya hasta corrí dos carreras y sigo
                       avanzando."
                       <br /> <br />
-                      Superó miedos profundamente
+                      Resultados: Superó miedos profundamente
                       arraigados por su condición de columna. Ganó fuerza,
                       movilidad y, sobre todo, confianza en su cuerpo. Su
                       transformación más significativa fue mental: dejó atrás
@@ -97,7 +97,7 @@ const Testimonial = () => {
                     <p className="text-[24px] leading-[40px] font-inter">
                       "Aprendí a moverme mejor, no solo a hacer ejercicio."
                       <br /> <br />
-                      Mejor técnica, mayor movilidad, conciencia del
+                      Resultados: Mejor técnica, mayor movilidad, conciencia del
                       cuerpo y mejor condición física. Lo recomiendo porque hay
                       educación del movimiento para quienes buscan entrenar con
                       conciencia y construir una base sólida.
@@ -118,8 +118,7 @@ const Testimonial = () => {
                       "Di el primer paso en el ejercicio y me demostré que sí
                       puedo, sin ponerme barreras mentales."
                       <br /> <br />
-                      Más
-                      confianza para moverse, nociones básicas de técnica y
+                      Resultados: Más confianza para moverse, nociones básicas de técnica y
                       consistencia en el ejercicio. Lo recomiendo por su
                       claridad, facilidad de aprender y acompañamiento cercano.
                     </p>
@@ -138,8 +137,8 @@ const Testimonial = () => {
                     <p className="text-[24px] leading-[40px] font-inter">
                       "Ahora cada ejercicio tiene más sentido, y me siento más fuerte y motivada."
                       Lo recomiendo mucho para aprender desde cero, evitar lesiones y ver cambios reales con poco tiempo.
-                    <br /> <br />
-                      Más energía, mejor descanso, aumento de fuerza y consciencia postural.
+                      <br /> <br />
+                      Resultados: Más energía, mejor descanso, aumento de fuerza y consciencia postural.
 
                     </p>
                   </div>

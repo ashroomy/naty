@@ -373,7 +373,7 @@ const Services = () => {
                 Completá el formulario y te envío todos los detalles de la próxima temporada, sin compromiso.                </p>
 
               <h6 className=" elisc_tm_title  text-main-color  w-fit text-[22px] font-bold pt-3 pb-4">
-                💰&nbsp;Inversión $300 USD
+                💰&nbsp;Inversión $120 USD
               </h6>
 
               <div
