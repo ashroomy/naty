@@ -17,7 +17,7 @@ const About = () => {
                 </h3>
 
                 <div className="pt-[50px] pb-[20px]">
-              <img className="rounded-md shadow-md w-2/3 small:w-full" src="assets/img/about/naty.jpg" alt="image" />
+              <img className="rounded-md w-2/3 small:w-full" src="assets/img/about/Naty1.png" alt="image" />
             </div>
 
                 <span className="job font-semibold text-[20px] text-white-color">

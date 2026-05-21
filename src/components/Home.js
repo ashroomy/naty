@@ -72,7 +72,7 @@ const Home = () => {
             <div className="right w-1/2 pl-[50px]">
               <img
                 className="rounded-md shadow-md"
-                src="assets/img/about/profile-1.jpg"
+                src="assets/img/about/NatyInicio.png"
                 alt="image"
               />
             </div>

@@ -42,7 +42,7 @@ const Services = () => {
                 <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
                   - Servicios
                 </span>
-                <h3 className="text-[40px] font-extrabold">Mis servicios</h3>
+                <h3 className="text-[40px] font-extrabold">MIS SERVICIOS...</h3>
               </div>
             </div>
             <div className="service_list w-full float-left mt-[40px] mb-[50px]">
@@ -343,7 +343,7 @@ const Services = () => {
                     </p>
                     <ul className="list-disc   text-main-color  list-inside  w-fit mr-[28px] text-[18px] pb-9">
                       <li className="pb-2">
-                        4 Talleres presenciales para aprender técnica y resolver dudas
+                        4 Talleres para aprender técnica y resolver dudas
                       </li>
                       <li className="pb-2">
                         Acompañamiento personalizado por el app y chat grupal.
