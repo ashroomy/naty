@@ -121,7 +121,7 @@ const Services = () => {
                   <div className="small:w-full block ">
                     <img
                       className="rounded-md shadow-md"
-                      src="assets/img/service/online.png"
+                      src="assets/img/service/Online1.png"
                       alt="image"
                     />
                   </div>
@@ -298,7 +298,7 @@ const Services = () => {
                 <div className="hidden small:block w-full h-auto overflow-hidden pb-3">
                   <img
                     className="rounded-md shadow-md"
-                    src="assets/img/service/stronghuman1.jpg"
+                    src="assets/img/service/StrongHuman1.png"
                     alt="image"
                   />
                 </div>
