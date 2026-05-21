@@ -13,7 +13,7 @@ const About = () => {
                   -  Mucho Gusto!
                 </span> */}
                 <h3 className="font-extrabold text-[40px]">
-                  ¡Bienvenidos soy <span className="text-blue-color">Naty!</span>
+                  ¡Hola, soy Naty!<span className="text-blue-color"></span>
                 </h3>
 
                 <div className="pt-[50px] pb-[20px]">

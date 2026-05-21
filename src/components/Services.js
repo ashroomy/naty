@@ -27,14 +27,7 @@ const services = [
     description:
       "Entrená con confianza. Aprendé a moverte sin dolor. Construí una base fuerte",
   },
-  {
-    id: 4,
-    name: "ENTRENAMIENTO PERSONAL PRESENCIAL –",
-    image: "assets/img/service/4.jpg",
-    link: "#personal",
-    description:
-      " Cada sesión está diseñada para vos, con un enfoque técnico que garantiza seguridad, progreso y resultados reales.",
-  },
+  
 ];
 const Services = () => {
   const { modalToggle } = useContext(context);
@@ -299,13 +292,13 @@ const Services = () => {
                 <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
                   - Servicios
                 </span>
-                <h3 className="text-[40px] font-extrabold pb-4"> PROGRAMA DE TEMPORADA STRONG HUMAN</h3>
+                <h3 className="text-[40px] font-extrabold pb-4"> PROGRAMA STRONG HUMAN</h3>
               </div>
               <div className="flex small:block justify-between items-start gap-4">
                 <div className="hidden small:block w-full h-auto overflow-hidden pb-3">
                   <img
                     className="rounded-md shadow-md"
-                    src="assets/img/service/1.jpg"
+                    src="assets/img/service/stronghuman1.jpg"
                     alt="image"
                   />
                 </div>
