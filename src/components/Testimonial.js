@@ -5,153 +5,80 @@ import SectionContainer from "./SectionContainer";
 const Testimonial = () => {
   return (
     <SectionContainer name="testimonial" className="mb-[40px]">
-      <div className="elisc_tm_testimonial_wrapper w-full float-left mb-[120px]">
-        <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
-          <div className="elisc_tm_testimonials w-full float-left bg-[#FFF5F6] pt-[50px] pr-[100px] pb-[50px] pl-[100px] small:px-[40px] mb-[24px]">
-            <div className="elisc_tm_title w-full float-left text-center">
-              <span className="w-full float-left font-medium uppercase inline-block mb-[12px]">
+      <div className="elisc_tm_testimonial_wrapper w-full float-left mb-[45px]">
+        <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
+          <div className="w-full bg-[#E8D1CE] rounded-[32px] py-[50px] px-[70px] small:px-[25px] overflow-hidden">
+            <div className="text-center mb-[30px]">
+              <span className="uppercase tracking-[2px] text-[13px] font-semibold text-white/80 inline-block mb-[10px]">
                 - Testimonios
               </span>
-              <h3 className="text-[40px] font-extrabold">
 
+              <h3 className="text-[38px] small:text-[30px] font-extrabold text-white leading-tight">
+                Personas reales. <br />
+                Resultados reales.
               </h3>
             </div>
-            <div className="testimonials_list w-full float-left text-center mt-[43px]">
+
+            <div className="max-w-[850px] mx-auto">
               <Swiper
                 {...sliderProps.testimonial}
                 className="owl-carousel owl-theme"
               >
                 <SwiperSlide>
-                  <div className="text mb-[33px]">
-                    <p className="text-[24px] leading-[40px] font-inter">
-                      "He logrado hacer con mi cuerpo cosas que nunca creí
-                      posibles."
-                      <br /> <br />
+                  <TestimonialCard
+                    quote="He logrado hacer con mi cuerpo cosas que nunca creí posibles."
+                    text="Mejoró su salud física y mental, desarrolló fuerza y aprendió a entrenar con técnica y seguridad. Lo recomiendo por su calidad profesional y entrenamiento personalizado."
+                    name="Christel Vogel"
+                    program="Entrenamiento Personal"
+                  />
+                </SwiperSlide>
 
-                      Resultados: Mejoró su salud física y mental, desarrolló
-                      fuerza y aprendió a entrenar con técnica y seguridad. Lo
-                      recomiendo por su calidad profesional y entrenamiento
-                      personalizado adaptado a sus habilidades y limitaciones.
-                    </p>
-                  </div>
-                  <div className="short w-auto flex items-center justify-center mb-[5px]">
+                <SwiperSlide>
+                  <TestimonialCard
+                    quote="He ganado fuerza, masa muscular y confianza en mi cuerpo."
+                    text="Transformación física, aumento de fuerza, resiliencia y constancia. Lo recomiendo por su atención al detalle, seguimiento cercano y rutinas bien estructuradas."
+                    name="Priscila Chinchilla"
+                    program="Entrenamiento Personal"
+                  />
+                </SwiperSlide>
 
-                    <div className="detail text-left pl-[18px]">
-                      <h3 className="text-[30px] font-medium">
-                        {" "}
-                        Christel Vogel
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="job text-center">Entrenamiento Personal </p>
-                </SwiperSlide>
                 <SwiperSlide>
-                  <div className="text mb-[33px]">
-                    <p className="text-[24px] leading-[40px] font-inter">
-                      "He ganado fuerza, masa muscular y confianza en mi
-                      cuerpo."
-                      <br /> <br />
-                      Resultados: Transformación física, aumento de fuerza,
-                      resiliencia y constancia a lo largo del tiempo. Lo
-                      recomiendo por su atención al detalle, seguimiento cercano
-                      y rutinas bien estructuradas.
-                    </p>
-                  </div>
-                  <div className="short w-auto flex items-center justify-center mb-[5px]">
-                    <div className="detail text-left pl-[18px]">
-                      <h3 className="text-[30px] font-medium">
-                        {" "}
-                        Priscila Chinchilla{" "}
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="job text-center">Entrenamiento Personal</p>
+                  <TestimonialCard
+                    quote="Los médicos me habían condicionado a pensar que no podía entrenar con pesas."
+                    text="Ganó fuerza, movilidad y confianza en su cuerpo. Su transformación más significativa fue mental: dejó atrás creencias limitantes."
+                    name="Cinthya Núñez"
+                    program="Entrenamiento Personal"
+                  />
                 </SwiperSlide>
-                <SwiperSlide>
-                  <div className="text mb-[33px]">
-                    <p className="text-[24px] leading-[40px] font-inter">
-                      "Los médicos me habían condicionado a pensar que no podía
-                      entrenar con pesas… hoy me demostré que sí, he logrado
-                      muchas cosas ya hasta corrí dos carreras y sigo
-                      avanzando."
-                      <br /> <br />
-                      Resultados: Superó miedos profundamente
-                      arraigados por su condición de columna. Ganó fuerza,
-                      movilidad y, sobre todo, confianza en su cuerpo. Su
-                      transformación más significativa fue mental: dejó atrás
-                      creencias limitantes impuestas y descubrió de lo que
-                      realmente es capaz. Lo recomiendo por su enfoque profundo
-                      e individualizado, se trabaja cuerpo y mente de forma
-                      segura desde el respeto a cada etapa del proceso.
-                    </p>
-                  </div>
-                  <div className="short w-auto flex items-center justify-center mb-[5px]">
-                    <div className="detail text-left pl-[18px]">
-                      <h3 className="text-[30px] font-medium">Cinthya Núñez</h3>
-                    </div>
-                  </div>
-                  <p className="job text-center">Entrenamiento Personal</p>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="text mb-[33px]">
-                    <p className="text-[24px] leading-[40px] font-inter">
-                      "Aprendí a moverme mejor, no solo a hacer ejercicio."
-                      <br /> <br />
-                      Resultados: Mejor técnica, mayor movilidad, conciencia del
-                      cuerpo y mejor condición física. Lo recomiendo porque hay
-                      educación del movimiento para quienes buscan entrenar con
-                      conciencia y construir una base sólida.
-                    </p>
-                  </div>
-                  <div className="short w-auto flex items-center justify-center mb-[5px]">
-                    <div className="detail text-left pl-[18px]">
-                      <h3 className="text-[30px] font-medium">
-                        Justin González
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="job text-center">Programa StrongHuman</p>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="text mb-[33px]">
-                    <p className="text-[24px] leading-[40px] font-inter">
-                      "Di el primer paso en el ejercicio y me demostré que sí
-                      puedo, sin ponerme barreras mentales."
-                      <br /> <br />
-                      Resultados: Más confianza para moverse, nociones básicas de técnica y
-                      consistencia en el ejercicio. Lo recomiendo por su
-                      claridad, facilidad de aprender y acompañamiento cercano.
-                    </p>
-                  </div>
-                  <div className="short w-auto flex items-center justify-center mb-[5px]">
-                    <div className="detail text-left pl-[18px]">
-                      <h3 className="text-[30px] font-medium">
-                        Silvia González
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="job text-center">Programa StrongHuman</p>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="text mb-[33px]">
-                    <p className="text-[24px] leading-[40px] font-inter">
-                      "Ahora cada ejercicio tiene más sentido, y me siento más fuerte y motivada."
-                      Lo recomiendo mucho para aprender desde cero, evitar lesiones y ver cambios reales con poco tiempo.
-                      <br /> <br />
-                      Resultados: Más energía, mejor descanso, aumento de fuerza y consciencia postural.
 
-                    </p>
-                  </div>
-                  <div className="short w-auto flex items-center justify-center mb-[5px]">
-                    <div className="detail text-left pl-[18px]">
-                      <h3 className="text-[30px] font-medium">
-                        Edlin Abarca
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="job text-center">Programa StrongHuman</p>
+                <SwiperSlide>
+                  <TestimonialCard
+                    quote="Aprendí a moverme mejor, no solo a hacer ejercicio."
+                    text="Mejor técnica, mayor movilidad, conciencia del cuerpo y mejor condición física. Educación del movimiento para entrenar con conciencia."
+                    name="Justin González"
+                    program="Programa StrongHuman"
+                  />
                 </SwiperSlide>
-                <div className="owl-dots"></div>
+
+                <SwiperSlide>
+                  <TestimonialCard
+                    quote="Di el primer paso en el ejercicio y me demostré que sí puedo."
+                    text="Más confianza para moverse, nociones básicas de técnica y consistencia. Lo recomiendo por su claridad y acompañamiento cercano."
+                    name="Silvia González"
+                    program="Programa StrongHuman"
+                  />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <TestimonialCard
+                    quote="Ahora cada ejercicio tiene más sentido, y me siento más fuerte y motivada."
+                    text="Más energía, mejor descanso, aumento de fuerza y consciencia postural. Ideal para aprender desde cero y ver cambios reales."
+                    name="Edlin Abarca"
+                    program="Programa StrongHuman"
+                  />
+                </SwiperSlide>
+
+                <div className="owl-dots mt-[25px]"></div>
               </Swiper>
             </div>
           </div>
@@ -160,4 +87,31 @@ const Testimonial = () => {
     </SectionContainer>
   );
 };
+
+const TestimonialCard = ({ quote, text, name, program }) => {
+  return (
+    <div className="bg-white rounded-[28px] shadow-lg px-[45px] py-[38px] small:px-[25px] small:py-[30px] text-center">
+      <div className="w-[55px] h-[55px] rounded-full bg-[#F4E5E2] flex items-center justify-center mx-auto mb-[20px]">
+        <span className="text-[26px] text-[#C2877E] font-bold">“</span>
+      </div>
+
+      <p className="text-[24px] small:text-[21px] leading-[1.4] font-bold text-[#222] mb-[20px]">
+        {quote}
+      </p>
+
+      <p className="text-[16px] leading-[1.7] text-[#555] mb-[28px]">
+        {text}
+      </p>
+
+      <div className="w-[55px] h-[3px] bg-[#C2877E] rounded-full mx-auto mb-[20px]"></div>
+
+      <h4 className="text-[24px] small:text-[21px] font-bold text-[#C2877E]">
+        {name}
+      </h4>
+
+      <p className="text-[#777] text-[15px] mt-[4px]">{program}</p>
+    </div>
+  );
+};
+
 export default Testimonial;

@@ -2,73 +2,82 @@ import { useContext } from "react";
 import { context } from "../context";
 
 const Sidebar = () => {
-  const { navChange, nav, menus } = useContext(context);
+  const { navChange, nav } = useContext(context);
 
-  const socialLinks = [
-    // { id: 1, name: "facebook", link: "#", icon: "icon-facebook-1" },
-    // { id: 2, name: "twitter", link: "#", icon: "icon-twitter-1" },
-    // { id: 3, name: "linkedin", link: "#", icon: "icon-linkedin-1" },
+  const orderedMenus = [
+    { id: 1, name: "Inicio", href: "home" },
+    { id: 2, name: "Sobre mi", href: "about" },
+    { id: 3, name: "Servicios", href: "service" },
+    { id: 4, name: "Testimonios", href: "testimonial" },
+    { id: 5, name: "Contacto", href: "contact" },
   ];
 
   return (
-    <div className="elisc_tm_sidebar w-[370px] h-[100vh] fixed left-0 top-0 border-solid border-[rgba(85,82,124,.1)] border-r">
-      <div className="sidebar_inner w-full float-left h-auto clear-both text-center">
-        <div className="author w-full float-left pt-[60px]">
-          <div className="relative w-[180px] mt-[24px] inline-block">
-            <img
-              className=" opacity-1 min-w-full"
-              src="assets/img/logo/logo-strong-human.png"
-              alt="image"
-            />
+    <div className="elisc_tm_sidebar w-[370px] h-[100vh] fixed left-0 top-0 border-r border-[#F4E5E2] bg-[#F8FCFD] overflow-hidden">
 
+      <div className="absolute top-[-80px] left-[-80px] w-[220px] h-[220px] bg-[#E9F9FF] rounded-full blur-3xl opacity-90"></div>
+
+      <div className="absolute bottom-[80px] right-[-100px] w-[240px] h-[240px] bg-[#F4E5E2] rounded-full blur-3xl opacity-80"></div>
+
+      <div className="sidebar_inner relative z-[2] w-full h-full text-center flex flex-col justify-between px-[34px] py-[45px]">
+
+        <div>
+
+          <div className="author w-full">
+            <div className="bg-white rounded-[28px] px-[24px] py-[26px] shadow-sm">
+              
+              <img
+                className="w-full max-w-[180px] mx-auto"
+                src="assets/img/logo/logo-strong-human.png"
+                alt="Naty Fonseca"
+              />
+
+              <div className="mt-[12px]">
+                <span className="inline-block bg-[#E9F9FF] text-[#2BA6B3] font-bold px-[18px] py-[7px] rounded-full">
+                  Coach
+                </span>
+              </div>
+
+            </div>
           </div>
-          <div className="name w-full float-left mt-[-19px]">
-            <h3>
-              <span>
-                Coach<span className="back">  Coach</span>
-              </span>
-            </h3>
-          </div>
-        </div>
-        <div className="menu scrollable w-full float-left">
-          <ul className="transition_link h-full flex items-center justify-center flex-col">
-            {menus.map((menu, i) => (
-              <li
-                className={`mb-[15px] ${nav === menu.href ? "active" : ""}`}
-                key={menu.id}
-              >
-                <a href={`#${menu.href}`} onClick={() => navChange(menu.href)}>
-                  {menu.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="copyright absolute bottom-[50px]">
-          <div className="social w-full float-left mb-[7px]">
-            <ul>
-              {socialLinks.map((link) => (
-                <li className="mr-[3px] inline-block" key={link.id}>
+
+          <div className="menu w-full mt-[34px]">
+            <ul className="transition_link flex flex-col gap-[14px] items-center">
+
+              {orderedMenus.map((menu) => (
+                <li key={menu.id}>
                   <a
-                    className="w-[40px] h-[40px] inline-block relative rounded-full text-dark-color"
-                    href={link.link}
+                    href={`#${menu.href}`}
+                    onClick={() => navChange(menu.href)}
+                    className={`inline-block rounded-[18px] px-[18px] py-[9px] font-semibold transition-all duration-300 ${
+                      nav === menu.href
+                        ? "bg-[#F4E5E2] text-black shadow-sm"
+                        : "text-[#555] hover:bg-white hover:text-black"
+                    }`}
                   >
-                    <i
-                      className={`${link.icon} absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-[16px]`}
-                    />
+                    {menu.name}
                   </a>
                 </li>
               ))}
+
             </ul>
           </div>
-          <div className="text py-0 px-[50px]">
-            <p>
-              Copyright © {new Date().getFullYear()} The BrokenRule
+
+        </div>
+
+        <div className="copyright">
+          <div className="bg-white/80 rounded-[22px] px-[20px] py-[16px] shadow-sm">
+            <p className="text-[14px] leading-[1.6] text-[#555]">
+              Copyright © {new Date().getFullYear()}
+              <br />
+              The BrokenRule
             </p>
           </div>
         </div>
+
       </div>
     </div>
   );
 };
+
 export default Sidebar;

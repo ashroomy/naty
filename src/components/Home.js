@@ -1,85 +1,166 @@
 import { useContext } from "react";
 import { context } from "../context";
 import SectionContainer from "./SectionContainer";
+
 const Home = () => {
   const { navChange } = useContext(context);
+
   return (
     <SectionContainer name="home">
-      <div className="elisc_tm_home w-full min-h-[100vh] clear-both float-left bg-[#]">
-        <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
-          <div className="details w-full min-h-[100vh] flex items-center">
-            <div className="left w-1/2">
-              <div className="title w-full float-left mb-[21px]">
-                <h3 className="font-extrabold italic text-[60px] leading-[70px] pb-4">
-                  Vive seguro, entrena fuerte
+      <div className="elisc_tm_home w-full min-h-[100vh] clear-both float-left bg-white relative overflow-hidden">
+
+        <div className="absolute top-[80px] right-[8%] w-[220px] h-[220px] bg-[#E9F9FF] rounded-full blur-3xl opacity-80"></div>
+
+        <div className="absolute bottom-[90px] left-[10%] w-[260px] h-[260px] bg-[#F4E5E2] rounded-full blur-3xl opacity-70"></div>
+
+        <div className="tm_content w-full max-w-[1250px] min-h-[100vh] mx-auto px-[20px] relative z-[2]">
+
+          <div className="details w-full min-h-[100vh] flex small:block items-center py-[70px] small:py-[55px]">
+
+            <div className="left w-1/2 small:w-full pr-[40px] small:pr-0">
+
+              <div className="title w-full mb-[24px]">
+                <h3 className="font-extrabold text-[66px] small:text-[42px] leading-[1.05] text-[#222]">
+                  Movete mejor. <br />
+                  Entrená con{" "}
+                  <span className="text-[#2BA6B3]">
+                    confianza.
+                  </span>
                 </h3>
               </div>
-              <div className="subtitle wfll text-[16px] max-w-[80%] float-left mb-[40px]">
-                <p>
-                  Te enseño paso a paso a moverte con seguridad y técnica, con la guía de un profesional, para construir fuerza para toda la vida.{" "}
+
+              <div className="subtitle w-full max-w-[92%] small:max-w-full mb-[34px]">
+                <p className="text-[19px] small:text-[17px] leading-[1.8] text-[#333]">
+                  Te acompaño paso a paso para que aprendás a moverte con
+                  seguridad, técnica y propósito, construyendo fuerza para toda
+                  la vida.
                 </p>
               </div>
-              <div className="buttons w-full float-left flex items-center mb-[150px]">
-                <div className="elisc_tm_button transition_link">
-                  <a href="#service" onClick={() => navChange("service")}>
-                    Mis servicios
-                  </a>
-                </div>
-                <div
-                  className="elisc_tm_button transition_link"
-                  data-style="border"
+
+              <div className="flex small:block items-center gap-[15px] mb-[34px]">
+
+                <a
+                  href="#service"
+                  onClick={() => navChange("service")}
+                  className="inline-block small:w-full small:text-center bg-[#2BA6B3] text-white font-semibold px-[34px] py-[15px] rounded-full hover:bg-[#238B96] transition-all"
                 >
-                  <a href="#contact" onClick={() => navChange("contact")}>
-                    Hablemos
-                  </a>
-                </div>
+                  Ver servicios
+                </a>
+
+                <a
+                  href="#contact"
+                  onClick={() => navChange("contact")}
+                  className="inline-block small:w-full small:text-center small:mt-[14px] bg-[#2BA6B3] text-white font-semibold px-[34px] py-[15px] rounded-full hover:bg-[#238B96] transition-all"
+                >
+                  Agendar sesión
+                </a>
+
               </div>
-              <div className="info w-full float-left">
-                <ul className="relative">
-                  <li className="pl-[15px] flex w-full gap-1">
+
+              <div className="grid grid-cols-3 small:grid-cols-1 gap-[14px] max-w-[560px] mb-[24px]">
+
+                <MiniCard
+                  number="+15"
+                  text="años de experiencia"
+                />
+
+                <MiniCard
+                  number="100%"
+                  text="enfoque personalizado"
+                />
+
+                <MiniCard
+                  number="1:1"
+                  text="acompañamiento real"
+                />
+
+              </div>
+
+              <div className="flex flex-col gap-[12px] max-w-[560px]">
+
+                <a
+                  href="http://wa.me/+50688820971"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-[12px] bg-[#F5F7F8] hover:bg-[#EEF4F6] transition-all rounded-full px-[22px] py-[16px]"
+                >
                   <img
-                      className=" h-[30px] "
-                      src="assets/img/WA.png"
-                      alt="image"
-                    />
-                    <a
-                      className="text-[#130F49] font-semibold text-[18px]"
-                      href="http://wa.me/+50688820971"
-                    >
-                      Contactame por WhatsApp
-                    </a>
-               
-                  </li>
-                  <li className="pl-[15px]">
-                    <a
-                      className="text-[#130F49] font-semibold text-[18px]"
-                      href="mailto:natyfh0228@hotmail.com"
-                    >
-                      natyfh0228@hotmail.com
-                    </a>
-                  </li>
-                  <li className="pl-[15px]">
-                    <a
-                      className="href_location text-[#130F49] font-semibold text-[18px]"
-                      href="#"
-                    >
-                      Costa Rica
-                    </a>
-                  </li>
-                </ul>
+                    className="h-[26px]"
+                    src="assets/img/WA.png"
+                    alt="WhatsApp"
+                  />
+
+                  <span className="text-[#130F49] font-semibold text-[17px]">
+                    Contactame por WhatsApp
+                  </span>
+                </a>
+
+                <a
+                  href="mailto:natyfh0228@hotmail.com"
+                  className="flex items-center gap-[12px] bg-[#F5F7F8] hover:bg-[#EEF4F6] transition-all rounded-full px-[22px] py-[16px]"
+                >
+                  <span className="text-[22px]">✉️</span>
+
+                  <span className="text-[#130F49] font-semibold text-[17px]">
+                    Correo electronico
+                  </span>
+                </a>
+
+                <div className="flex items-center gap-[12px] bg-[#F5F7F8] rounded-full px-[22px] py-[16px]">
+                  <span className="text-[22px]">📍</span>
+
+                  <span className="text-[#130F49] font-semibold text-[17px]">
+                    Costa Rica
+                  </span>
+                </div>
+
               </div>
+
             </div>
-            <div className="right w-1/2 pl-[50px]">
-              <img
-                className="rounded-md shadow-md"
-                src="assets/img/about/NatyInicio.png"
-                alt="image"
-              />
+
+            <div className="right w-1/2 small:w-full small:mt-[45px] pl-[40px] small:pl-0">
+
+              <div className="relative">
+
+                <div className="absolute -top-[24px] -left-[24px] w-[120px] h-[120px] bg-[#E9F9FF] rounded-full z-[-1]"></div>
+
+                <div className="absolute -bottom-[24px] -right-[24px] w-[150px] h-[150px] bg-[#F4E5E2] rounded-full z-[-1]"></div>
+
+                <div className="bg-[#F4E5E2] rounded-[34px] p-[16px]">
+                  <img
+                    className="w-full rounded-[26px] object-cover"
+                    src="assets/img/about/NatyInicio.png"
+                    alt="Naty Fonseca"
+                  />
+                </div>
+
+              </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
     </SectionContainer>
   );
 };
+
+const MiniCard = ({ number, text }) => {
+  return (
+    <div className="bg-[#E9F9FF] rounded-[24px] p-[20px] text-center">
+
+      <h4 className="text-[#2BA6B3] font-extrabold text-[24px] mb-[4px]">
+        {number}
+      </h4>
+
+      <p className="text-[#444] text-[14px] leading-[1.5]">
+        {text}
+      </p>
+
+    </div>
+  );
+};
+
 export default Home;
