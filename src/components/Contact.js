@@ -7,13 +7,13 @@ const Contact = () => {
   return (
     <SectionContainer name="contact">
       <div className="w-full float-left py-[35px] relative">
-        
+
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[360px] bg-[#BEEFF5] blur-[120px] opacity-50 rounded-full -z-10" />
 
         <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
-          
+
           <div className="w-full bg-white rounded-[32px] shadow-xl px-[70px] py-[35px] small:px-[25px] small:py-[28px]">
-            
+
             <div className="text-center mb-[25px]">
               <h3 className="text-[36px] small:text-[28px] font-extrabold text-black uppercase mb-[8px]">
                 ¡EMPECEMOS YA!
@@ -28,6 +28,8 @@ const Contact = () => {
               action="https://formsubmit.co/natyfh0228@hotmail.com"
               method="POST"
             >
+
+              {/* CONFIGURACIÓN FORMSUBMIT */}
               <input
                 type="hidden"
                 name="_subject"
@@ -40,7 +42,21 @@ const Contact = () => {
                 value="false"
               />
 
+              <input
+                type="hidden"
+                name="_template"
+                value="table"
+              />
+
+              <input
+                type="hidden"
+                name="_next"
+                value="https://natyfonseca.com"
+              />
+
+              {/* NOMBRE Y CORREO */}
               <div className="grid grid-cols-2 small:grid-cols-1 gap-[16px] mb-[16px]">
+
                 <input
                   type="text"
                   name="Nombre"
@@ -56,8 +72,10 @@ const Contact = () => {
                   required
                   className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none"
                 />
+
               </div>
 
+              {/* TELÉFONO */}
               <input
                 type="tel"
                 name="Teléfono"
@@ -66,13 +84,16 @@ const Contact = () => {
                 className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none mb-[22px]"
               />
 
+              {/* SERVICIOS */}
               <div className="mb-[22px]">
+
                 <p className="font-bold text-[#222] text-[22px] mb-[18px]">
                   ¿Cuál servicio querés?
                 </p>
 
                 <div className="grid grid-cols-3 small:grid-cols-1 gap-[18px]">
-                  
+
+                  {/* ONLINE */}
                   <label
                     className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer text-center transition-all border-2 ${
                       selectedService === "online"
@@ -80,6 +101,7 @@ const Contact = () => {
                         : "bg-[#E9F9FF] border-transparent"
                     }`}
                   >
+
                     <input
                       type="radio"
                       name="Servicio"
@@ -96,8 +118,10 @@ const Contact = () => {
                     <p className="text-[#444] text-[15px] leading-[1.5]">
                       acompañamiento remoto personalizado
                     </p>
+
                   </label>
 
+                  {/* HÍBRIDO */}
                   <label
                     className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer transition-all text-center border-2 ${
                       selectedService === "hibrido"
@@ -105,6 +129,7 @@ const Contact = () => {
                         : "bg-[#E9F9FF] border-transparent"
                     }`}
                   >
+
                     <input
                       type="radio"
                       name="Servicio"
@@ -121,8 +146,10 @@ const Contact = () => {
                     <p className="text-[#444] text-[15px] leading-[1.5]">
                       sesiones presenciales + online
                     </p>
+
                   </label>
 
+                  {/* STRONG HUMAN */}
                   <label
                     className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer transition-all text-center border-2 ${
                       selectedService === "stronghuman"
@@ -130,6 +157,7 @@ const Contact = () => {
                         : "bg-[#E9F9FF] border-transparent"
                     }`}
                   >
+
                     <input
                       type="radio"
                       name="Servicio"
@@ -146,11 +174,13 @@ const Contact = () => {
                     <p className="text-[#444] text-[15px] leading-[1.5]">
                       movimiento + fuerza consciente
                     </p>
+
                   </label>
 
                 </div>
               </div>
 
+              {/* MENSAJE */}
               <textarea
                 name="Mensaje"
                 placeholder="Mensaje"
@@ -159,13 +189,16 @@ const Contact = () => {
                 className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none mb-[18px]"
               />
 
+              {/* BOTÓN */}
               <div className="flex justify-end">
+
                 <button
                   type="submit"
                   className="bg-[#2BA6B3] text-white font-bold text-[15px] px-[38px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
                 >
                   ENVIAR
                 </button>
+
               </div>
 
             </form>
