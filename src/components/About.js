@@ -15,7 +15,8 @@ const About = () => {
                 </span>
 
                 <h3 className="font-extrabold text-[40px] small:text-[32px] leading-tight text-[#222]">
-                  ¡Hola, soy <span className="text-[#2BA6B3]">Naty!</span>
+                  ¡Hola, soy{" "}
+                  <span className="text-[#2BA6B3]">Naty!</span>
                 </h3>
               </div>
 
@@ -28,13 +29,13 @@ const About = () => {
 
                     <img
                       className="w-full rounded-[32px] object-cover"
-                      src="assets/img/about/Naty1.png"
+                      src="/assets/img/about/Naty1.png"
                       alt="Naty Fonseca"
                     />
                   </div>
 
                   <div className="mt-[18px]">
-                    <span className="job font-semibold text-[18px] text-[#B8DDE3]">
+                    <span className="job font-semibold text-[18px] text-[#2BA6B3]">
                       <span className="cd-headline rotate-1">
                         <TypeingAnimation />
                       </span>
@@ -78,10 +79,25 @@ const About = () => {
             </div>
 
             <div className="mt-[35px] grid grid-cols-4 small:grid-cols-1 gap-[15px]">
-              <InfoCard number="+15 años" text="de experiencia acompañando personas" />
-              <InfoCard number="Integral" text="ciencia del movimiento + fuerza consciente" />
-              <InfoCard number="Personalizado" text="planes adaptados a cada proceso" />
-              <InfoCard number="Seguro" text="prevención, técnica y progreso sostenible" />
+              <InfoCard
+                number="+15 años"
+                text="de experiencia acompañando personas"
+              />
+
+              <InfoCard
+                number="Integral"
+                text="ciencia del movimiento + fuerza consciente"
+              />
+
+              <InfoCard
+                number="Personalizado"
+                text="planes adaptados a cada proceso"
+              />
+
+              <InfoCard
+                number="Seguro"
+                text="prevención, técnica y progreso sostenible"
+              />
             </div>
           </div>
 
@@ -98,7 +114,7 @@ const About = () => {
 
             <img
               className="m-auto w-auto h-[42px] opacity-90 relative z-[2]"
-              src="assets/img/about/logo-white.png"
+              src="/assets/img/about/logo-white.png"
               alt="Strong Human"
             />
           </div>
@@ -151,13 +167,46 @@ const About = () => {
           z-index: 1;
         }
 
+        .job {
+          display: block;
+          min-height: 28px;
+        }
+
+        .job :global(.cd-headline) {
+          display: inline-block;
+        }
+
+        .job :global(.cd-words-wrapper) {
+          position: relative;
+          display: inline-block;
+          min-width: 230px;
+          height: 28px;
+          overflow: hidden;
+        }
+
+        .job :global(.cd-words-wrapper b) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          white-space: nowrap;
+          transition: opacity 0.3s ease;
+        }
+
+        .job :global(.cd-words-wrapper b.is-visible) {
+          position: relative;
+          opacity: 1;
+        }
+
         @keyframes floatOne {
           0% {
             transform: translate(0, 0);
           }
+
           50% {
             transform: translate(35px, 25px);
           }
+
           100% {
             transform: translate(0, 0);
           }
@@ -167,9 +216,11 @@ const About = () => {
           0% {
             transform: translate(0, 0);
           }
+
           50% {
             transform: translate(-35px, -20px);
           }
+
           100% {
             transform: translate(0, 0);
           }
@@ -179,9 +230,11 @@ const About = () => {
           0% {
             left: -80%;
           }
+
           45% {
             left: 130%;
           }
+
           100% {
             left: 130%;
           }
