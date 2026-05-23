@@ -1,128 +1,174 @@
-import emailjs from "emailjs-com";
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 
 const Contact = () => {
-  const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const { name, email, message } = mailData;
-  const [error, setError] = useState(null);
-
-  const onChange = (e) =>
-    setMailData({ ...mailData, [e.target.name]: e.target.value });
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
-      setError(true);
-      clearError();
-    } else {
-      emailjs
-        .send(
-          "service_seruhwu",
-          "template_21aw58z",
-          mailData,
-          "Q3pccdLZhU-mZT7tQ"
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
-    }
-  };
-
-  const clearError = () => {
-    setTimeout(() => {
-      setError(null);
-    }, 2000);
-  };
+  const [selectedService, setSelectedService] = useState("");
 
   return (
     <SectionContainer name="contact">
-      <div className="elisc_tm_contact w-full min-h-[75vh] float-left bg-[#E9F9FF] rounded-[32px] py-[90px] mt-[30px]">
-        <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
-          <div className="w-full bg-white rounded-[28px] shadow-lg p-[40px] small:p-[28px] flex small:block items-center justify-between gap-[50px]">
-            
-            <div className="w-1/2 small:w-full">
-              <span className="font-medium uppercase inline-block mb-[12px] text-sm tracking-wide">
-                - ¡Hablemos!
-              </span>
+      <div className="w-full float-left py-[35px] relative">
+        
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[360px] bg-[#BEEFF5] blur-[120px] opacity-50 rounded-full -z-10" />
 
-              <h3 className="text-[44px] small:text-[32px] leading-tight font-extrabold text-[#2BA6B3] mb-[20px]">
-                El primer paso es entender tus necesidades.
+        <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
+          
+          <div className="w-full bg-white rounded-[32px] shadow-xl px-[70px] py-[35px] small:px-[25px] small:py-[28px]">
+            
+            <div className="text-center mb-[25px]">
+              <h3 className="text-[36px] small:text-[28px] font-extrabold text-black uppercase mb-[8px]">
+                ¡EMPECEMOS YA!
               </h3>
 
-              <p className="text-[18px] leading-[1.7] mb-[30px] text-[#222]">
-                Completá este breve formulario y agendamos tu sesión virtual
-                totalmente gratis.
+              <p className="text-[16px] text-[#222]">
+                Llena el siguiente formulario para coordinar conmigo y empezamos a trabajar.
               </p>
-
-              <div className="flex small:block gap-[15px] mb-[35px]">
-                <a
-                  href="https://forms.gle/rfkKz1Xn5azZZWky9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block small:w-full small:text-center bg-[#2BA6B3] text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#238B96] transition-all"
-                >
-                  Llenar formulario
-                </a>
-
-                <a
-                  href="http://wa.me/+50688820971"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex small:w-full small:justify-center small:mt-[14px] items-center gap-[12px] bg-[#2BA6B3]/80 text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#2BA6B3] transition-all"
-                >
-                  <img
-                    className="h-[24px]"
-                    src="assets/img/WA.png"
-                    alt="WhatsApp"
-                  />
-                  WhatsApp
-                </a>
-              </div>
             </div>
 
-            <div className="w-1/2 small:w-full small:mt-[40px]">
-              <div className="bg-[#E9F9FF] rounded-[24px] p-[35px] small:p-[25px]">
-                <h4 className="text-[26px] font-bold mb-[18px] text-[#222]">
-                  ¿Qué sucede después?
-                </h4>
+            <form
+              action="https://formsubmit.co/natyfh0228@hotmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nuevo formulario desde la página web"
+              />
 
-                <ul className="space-y-[18px] text-[#222]">
-                  <li className="flex gap-[12px]">
-                    <span className="text-[#2BA6B3] font-bold">01</span>
-                    <p>Completás el formulario con tus necesidades.</p>
-                  </li>
+              <input
+                type="hidden"
+                name="_captcha"
+                value="false"
+              />
 
-                  <li className="flex gap-[12px]">
-                    <span className="text-[#2BA6B3] font-bold">02</span>
-                    <p>
-                      Revisamos tu caso y definimos la mejor opción para vos.
-                    </p>
-                  </li>
+              <div className="grid grid-cols-2 small:grid-cols-1 gap-[16px] mb-[16px]">
+                <input
+                  type="text"
+                  name="Nombre"
+                  placeholder="Nombre"
+                  required
+                  className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none"
+                />
 
-                  <li className="flex gap-[12px]">
-                    <span className="text-[#2BA6B3] font-bold">03</span>
-                    <p>
-                      Agendamos una sesión virtual gratuita para conversar.
-                    </p>
-                  </li>
-                </ul>
+                <input
+                  type="email"
+                  name="Correo"
+                  placeholder="Correo electrónico"
+                  required
+                  className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none"
+                />
               </div>
-            </div>
 
+              <input
+                type="tel"
+                name="Teléfono"
+                placeholder="Teléfono"
+                required
+                className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none mb-[22px]"
+              />
+
+              <div className="mb-[22px]">
+                <p className="font-bold text-[#222] text-[22px] mb-[18px]">
+                  ¿Cuál servicio querés?
+                </p>
+
+                <div className="grid grid-cols-3 small:grid-cols-1 gap-[18px]">
+                  
+                  <label
+                    className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer text-center transition-all border-2 ${
+                      selectedService === "online"
+                        ? "bg-[#DDF8FC] border-[#2BA6B3]"
+                        : "bg-[#E9F9FF] border-transparent"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="Servicio"
+                      value="Plan de entrenamiento online"
+                      checked={selectedService === "online"}
+                      onChange={() => setSelectedService("online")}
+                      className="hidden"
+                    />
+
+                    <h4 className="text-[28px] font-extrabold text-[#2BA6B3] mb-[8px]">
+                      Online
+                    </h4>
+
+                    <p className="text-[#444] text-[15px] leading-[1.5]">
+                      acompañamiento remoto personalizado
+                    </p>
+                  </label>
+
+                  <label
+                    className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer transition-all text-center border-2 ${
+                      selectedService === "hibrido"
+                        ? "bg-[#DDF8FC] border-[#2BA6B3]"
+                        : "bg-[#E9F9FF] border-transparent"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="Servicio"
+                      value="Plan de entrenamiento híbrido"
+                      checked={selectedService === "hibrido"}
+                      onChange={() => setSelectedService("hibrido")}
+                      className="hidden"
+                    />
+
+                    <h4 className="text-[28px] font-extrabold text-[#2BA6B3] mb-[8px]">
+                      Híbrido
+                    </h4>
+
+                    <p className="text-[#444] text-[15px] leading-[1.5]">
+                      sesiones presenciales + online
+                    </p>
+                  </label>
+
+                  <label
+                    className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer transition-all text-center border-2 ${
+                      selectedService === "stronghuman"
+                        ? "bg-[#DDF8FC] border-[#2BA6B3]"
+                        : "bg-[#E9F9FF] border-transparent"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="Servicio"
+                      value="Programa Strong Human"
+                      checked={selectedService === "stronghuman"}
+                      onChange={() => setSelectedService("stronghuman")}
+                      className="hidden"
+                    />
+
+                    <h4 className="text-[28px] font-extrabold text-[#2BA6B3] mb-[8px]">
+                      Strong Human
+                    </h4>
+
+                    <p className="text-[#444] text-[15px] leading-[1.5]">
+                      movimiento + fuerza consciente
+                    </p>
+                  </label>
+
+                </div>
+              </div>
+
+              <textarea
+                name="Mensaje"
+                placeholder="Mensaje"
+                required
+                rows="3"
+                className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none mb-[18px]"
+              />
+
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  className="bg-[#2BA6B3] text-white font-bold text-[15px] px-[38px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
+                >
+                  ENVIAR
+                </button>
+              </div>
+
+            </form>
           </div>
         </div>
       </div>

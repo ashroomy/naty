@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { context } from "../context";
+import { useContext } from "react"; 
+import { context } from "../context"; 
 import SectionContainer from "./SectionContainer";
 
 const services = [

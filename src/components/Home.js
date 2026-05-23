@@ -21,7 +21,7 @@ const Home = () => {
 
               <div className="title w-full mb-[24px]">
                 <h3 className="font-extrabold text-[66px] small:text-[42px] leading-[1.05] text-[#222]">
-                  Movete mejor. <br />
+                  Movéte mejor. <br />
                   Entrená con{" "}
                   <span className="text-[#2BA6B3]">
                     confianza.
@@ -105,14 +105,6 @@ const Home = () => {
                     Correo electronico
                   </span>
                 </a>
-
-                <div className="flex items-center gap-[12px] bg-[#F5F7F8] rounded-full px-[22px] py-[16px]">
-                  <span className="text-[22px]">📍</span>
-
-                  <span className="text-[#130F49] font-semibold text-[17px]">
-                    Costa Rica
-                  </span>
-                </div>
 
               </div>
 

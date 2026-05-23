@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     modal,
     experienceModal,
     serviceModal,
-    portfolioModal,
+   portfolioModal,
     blogModal,
     animation,
   } = useContext(context);
@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
       {modal && serviceModal && <ServicePopup />}
       {modal && portfolioModal && <PortfolioPopup />}
       {modal && blogModal && <BlogPopup />}
+
       <div
         className={animation ? "elisc_tm_all_wrap" : "dodo_tm_one_page_wrapper"}
         data-magic-cursor="show"
@@ -40,15 +41,47 @@ const Layout = ({ children }) => {
         data-exit
       >
         <MobileMenu />
+
         <Sidebar />
+
         <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]">
           <div className="mainpart_inner w-full min-h-[100vh] clear-both float-left relative">
             {children}
           </div>
         </div>
+
+        {/* BOTÓN INSTAGRAM */}
+        <a
+          href="https://instagram.com/natyfonsecacoach"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-24 right-5 z-[999] flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 shadow-2xl transition-all duration-300 hover:scale-110"
+        >
+          <img
+            src="assets/img/about/instagram.png"
+            alt="Instagram"
+            className="h-7 w-7"
+          />
+        </a>
+
+        {/* BOTÓN WHATSAPP */}
+        <a
+          href="https://wa.me/50688820971"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-5 right-5 z-[999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-2xl transition-all duration-300 hover:scale-110"
+        >
+          <img
+            src="assets/img/about/whatsapp.png"
+            alt="WhatsApp"
+            className="h-8 w-8"
+          />
+        </a>
+
         <Cursor />
       </div>
     </Fragment>
   );
 };
+
 export default Layout;
