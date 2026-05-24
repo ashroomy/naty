@@ -1,5 +1,5 @@
-import { useContext } from "react"; 
-import { context } from "../context"; 
+import { useContext, useState } from "react";
+import { context } from "../context";
 import SectionContainer from "./SectionContainer";
 
 const services = [
@@ -89,7 +89,6 @@ const Services = () => {
 
       <ServiceDetail
         id="online"
-        label="- Servicios"
         title="Plan de entrenamiento online"
         subtitle="Entrená desde donde estés, con acompañamiento real y estructura profesional."
         image="assets/img/service/Online1.png"
@@ -103,13 +102,12 @@ const Services = () => {
           "Sentirte acompañado, con feedback y ajustes constantes.",
         ]}
         howItWorks="Diseñamos un plan personalizado según tus metas, espacio y equipo disponible. A través de mi app vas a recibir tus rutinas semanales con videos, explicaciones y seguimiento constante."
-        price="Inversión mensual: $120 USD"
+        price="¿Como adquirirlo?"
         ctaText="¿Querés saber si este plan es para vos? Completá el formulario y te envío todos los detalles."
       />
 
       <ServiceDetail
         id="hibrido"
-        label="- Servicios"
         title="Plan de entrenamiento híbrido"
         subtitle="Lo mejor de los dos mundos: guía presencial + libertad para aplicar lo aprendido."
         image="assets/img/service/hibrida.png"
@@ -121,13 +119,12 @@ const Services = () => {
           "Mantener la constancia y el progreso a tu propio ritmo, sin perder la guía profesional.",
         ]}
         howItWorks="Alternamos sesiones presenciales donde trabajamos técnica, control y ajustes, con semanas de entrenamiento online para que apliques lo aprendido. Durante todo el proceso tenés acceso a tu plan personalizado, videos explicativos y seguimiento constante."
-        price="Inversión mensual: $200 USD"
+        price="¿Como adquirirlo?"
         ctaText="¿Querés probar el formato híbrido? Completá el formulario y te envío todos los detalles."
       />
 
       <ServiceDetail
         id="stronghuman"
-        label="- Servicios"
         title="Programa Strong Human"
         subtitle="Entrená con confianza. Aprendé a moverte sin dolor. Construí una base fuerte."
         image="assets/img/service/StrongHuman1.png"
@@ -141,10 +138,40 @@ const Services = () => {
           "Una base sólida para entrenar con seguridad y confianza.",
         ]}
         howItWorks="StrongHuman es un programa grupal por temporada, con cupo limitado y una duración de 8 semanas. Es tu punto de partida para entrenar con seguridad y construir fuerza para toda la vida."
-        price="Inversión: $120 USD"
+        price="¿Como adquirirlo?"
         ctaText="¿Querés empezar tu proceso StrongHuman? Completá el formulario y te envío todos los detalles de la próxima temporada, sin compromiso."
       />
     </>
+  );
+};
+
+const AccordionItem = ({ title, children, bgColor, defaultOpen = false }) => {
+  const [open, setOpen] = useState(defaultOpen);
+
+  return (
+    <div className={`${bgColor} rounded-[26px] w-full overflow-hidden`}>
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-[20px] p-[30px] text-left"
+      >
+        <h4 className="text-[24px] small:text-[21px] font-bold text-[#222]">
+          {title}
+        </h4>
+
+        <span className="w-[42px] h-[42px] min-w-[42px] rounded-full bg-white text-[#2BA6B3] flex items-center justify-center text-[30px] font-semibold shadow-sm">
+          {open ? "−" : "+"}
+        </span>
+      </button>
+
+      <div
+        className={`transition-all duration-500 ease-in-out ${
+          open ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden`}
+      >
+        <div className="px-[30px] pb-[30px]">{children}</div>
+      </div>
+    </div>
   );
 };
 
@@ -167,50 +194,57 @@ const ServiceDetail = ({
       <div className="elisc_tm_services w-full float-left pb-[70px]">
         <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
           <div className="bg-white rounded-[32px] shadow-lg p-[45px] small:p-[25px]">
-            <div className="mb-[35px]">
-              <span className="font-medium uppercase inline-block mb-[12px]">
-                {label}
-              </span>
-
-              <h3 className="text-[42px] small:text-[30px] font-extrabold text-[#2BA6B3] leading-tight uppercase">
-                {title}
-              </h3>
-
-              <p className="text-[19px] text-[#555] mt-[15px] max-w-[750px] leading-[1.7]">
-                {subtitle}
-              </p>
-            </div>
-
             <div
-              className={`flex small:block gap-[45px] items-center mb-[40px] ${
+              className={`relative overflow-hidden bg-[#F8FCFD] rounded-[30px] p-[30px] small:p-[20px] flex small:block gap-[40px] items-center mb-[35px] ${
                 imageFirst ? "" : "flex-row-reverse"
               }`}
             >
-              <div className="w-1/2 small:w-full">
-                <img
-                  className="w-full rounded-[26px] shadow-md"
-                  src={image}
-                  alt={title}
-                />
+              <div className="absolute top-[-80px] right-[-80px] w-[230px] h-[230px] bg-[#E9F9FF] rounded-full blur-[20px] opacity-80"></div>
+              <div className="absolute bottom-[-90px] left-[-90px] w-[240px] h-[240px] bg-[#F4E5E2] rounded-full blur-[25px] opacity-80"></div>
+
+              <div className="relative z-[2] w-1/2 small:w-full">
+                <div className="relative overflow-hidden rounded-[26px] shadow-md">
+                  <img
+                    className="w-full h-[430px] small:h-[300px] object-cover"
+                    src={image}
+                    alt={title}
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent"></div>
+                </div>
               </div>
 
-              <div className="w-1/2 small:w-full small:mt-[28px]">
-                <h4 className="text-[24px] font-bold text-[#222] mb-[16px]">
-                  {introTitle}
-                </h4>
+              <div className="relative z-[2] w-1/2 small:w-full small:mt-[28px]">
+                <span className="font-medium uppercase inline-block mb-[12px] text-[#C2877E]">
+                  {label}
+                </span>
 
-                <p className="text-[18px] leading-[1.8] text-[#555]">
-                  {intro}
+                <h3 className="text-[42px] small:text-[30px] font-extrabold text-[#2BA6B3] leading-tight uppercase mb-[15px]">
+                  {title}
+                </h3>
+
+                <p className="text-[19px] text-[#555] leading-[1.7] mb-[25px]">
+                  {subtitle}
                 </p>
+
+                <div className="bg-white/90 backdrop-blur-sm rounded-[24px] p-[25px] shadow-sm border border-white">
+                  <h4 className="text-[24px] small:text-[21px] font-bold text-[#222] mb-[14px]">
+                    {introTitle}
+                  </h4>
+
+                  <p className="text-[17px] leading-[1.8] text-[#555]">
+                    {intro}
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 small:grid-cols-1 gap-[25px] mb-[35px]">
-              <div className="bg-[#E9F9FF] rounded-[26px] p-[30px]">
-                <h4 className="text-[24px] font-bold text-[#222] mb-[20px]">
-                  Lo que vas a lograr
-                </h4>
-
+            <div className="flex flex-col gap-[25px]">
+              <AccordionItem
+                title="Lo que vas a lograr"
+                bgColor="bg-[#E9F9FF]"
+                defaultOpen={false}
+              >
                 <ul className="space-y-[14px]">
                   {benefits.map((item, index) => (
                     <li
@@ -222,38 +256,38 @@ const ServiceDetail = ({
                     </li>
                   ))}
                 </ul>
-              </div>
+              </AccordionItem>
 
-              <div className="bg-[#F4E5E2] rounded-[26px] p-[30px]">
-                <h4 className="text-[24px] font-bold text-[#222] mb-[20px]">
-                  ¿Cómo funciona?
-                </h4>
-
+              <AccordionItem
+                title="¿Cómo funciona?"
+                bgColor="bg-[#F4E5E2]"
+                defaultOpen={false}
+              >
                 <p className="text-[17px] leading-[1.8] text-[#444]">
                   {howItWorks}
                 </p>
-              </div>
-            </div>
+              </AccordionItem>
 
-            <div className="bg-[#FAFAFA] rounded-[26px] p-[30px] flex small:block items-center justify-between gap-[30px]">
-              <div>
-                <h4 className="text-[24px] font-bold text-[#C2877E] mb-[10px]">
-                  💰 {price}
-                </h4>
-
-                <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">
-                  {ctaText}
-                </p>
-              </div>
-
-              <a
-                href="https://forms.gle/rfkKz1Xn5azZZWky9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block small:w-full small:text-center small:mt-[22px] bg-[#2BA6B3] text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#238B96] transition-all"
+              <AccordionItem
+                title={price}
+                bgColor="bg-[#D4D4D4]"
+                defaultOpen={false}
               >
-                Llenar formulario
-              </a>
+                <div className="flex small:block items-center justify-between gap-[30px]">
+                  <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">
+                    {ctaText}
+                  </p>
+
+                  <a
+                    href="https://forms.gle/rfkKz1Xn5azZZWky9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block small:w-full small:text-center small:mt-[22px] bg-[#2BA6B3] text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#238B96] transition-all"
+                  >
+                    Llenar formulario
+                  </a>
+                </div>
+              </AccordionItem>
             </div>
           </div>
         </div>
