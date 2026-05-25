@@ -62,7 +62,7 @@ const Contact = () => {
                   name="Nombre"
                   placeholder="Nombre"
                   required
-                  className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none"
+                  className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[22px] border-none"
                 />
 
                 <input
@@ -70,7 +70,7 @@ const Contact = () => {
                   name="Correo"
                   placeholder="Correo electrónico"
                   required
-                  className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none"
+                  className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[22px] border-none"
                 />
 
               </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                 name="Teléfono"
                 placeholder="Teléfono"
                 required
-                className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[14px] border-none mb-[22px]"
+                className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[22px] border-none mb-[22px]"
               />
 
               {/* SERVICIOS */}
@@ -97,7 +97,7 @@ const Contact = () => {
                   <label
                     className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer text-center transition-all border-2 ${
                       selectedService === "online"
-                        ? "bg-[#DDF8FC] border-[#2BA6B3]"
+                        ? "bg-[#DDF8FC] border-[#555] shadow-md"
                         : "bg-[#E9F9FF] border-transparent"
                     }`}
                   >
@@ -125,7 +125,7 @@ const Contact = () => {
                   <label
                     className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer transition-all text-center border-2 ${
                       selectedService === "hibrido"
-                        ? "bg-[#DDF8FC] border-[#2BA6B3]"
+                        ? "bg-[#DDF8FC] border-[#555] shadow-md"
                         : "bg-[#E9F9FF] border-transparent"
                     }`}
                   >
@@ -153,7 +153,7 @@ const Contact = () => {
                   <label
                     className={`rounded-[24px] px-[24px] py-[22px] cursor-pointer transition-all text-center border-2 ${
                       selectedService === "stronghuman"
-                        ? "bg-[#DDF8FC] border-[#2BA6B3]"
+                        ? "bg-[#DDF8FC] border-[#555] shadow-md"
                         : "bg-[#E9F9FF] border-transparent"
                     }`}
                   >
