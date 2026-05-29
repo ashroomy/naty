@@ -94,16 +94,18 @@ const Services = () => {
         image="assets/img/service/Online1.png"
         imageFirst
         introTitle="¿Para quién es este servicio?"
-        intro="Para quienes quieren aprender a entrenar correctamente desde casa o el gimnasio, con un plan hecho a su medida y la guía de un profesional. Es ideal si ya tenés algo de experiencia o querés aprender a organizar tus entrenamientos con propósito."
+        intro="Para quienes quieren aprender a entrenar correctamente desde casa o el gimnasio, con un plan adaptado a sus necesidades y la guía de un profesional. Ideal si querés entrenar con más seguridad, estructura y propósito."
         benefits={[
           "Mantener el hábito de entrenar con estructura y sin improvisar.",
-          "Seguir un plan adaptado a tu nivel, objetivos y ritmo de vida.",
-          "Entrenar con claridad, sabiendo exactamente qué hacer y cómo hacerlo.",
+          "Seguir un plan adaptado a tu nivel, objetivos y estilo de vida.",
+          "Aprender a ejecutar los ejercicios correctamente, entendiendo mejor tu cuerpo, tu movimiento y dónde debe sentirse el esfuerzo.",
+          "Entrenar con más claridad, seguridad y confianza, aprendiendo pilares importantes del entrenamiento para avanzar de manera segura y sostenible.",
           "Sentirte acompañado, con feedback y ajustes constantes.",
+          
         ]}
-        howItWorks="Diseñamos un plan personalizado según tus metas, espacio y equipo disponible. A través de mi app vas a recibir tus rutinas semanales con videos, explicaciones y seguimiento constante."
-        price="¿Como adquirirlo?"
-        ctaText="¿Querés saber si este plan es para vos? Completá el formulario y te envío todos los detalles."
+        howItWorks="Diseñamos un plan personalizado por 6 semanas según tus metas, nivel, espacio y equipo disponible. A través de mi app recibirás tus rutinas semanales con videos, explicaciones detalladas y seguimiento constante para que aprendás a entrenar correctamente y avancés con más seguridad y confianza."
+        price="¿Como empezar?"
+        ctaText="Podés iniciar tu proceso realizando el pago del plan y agendando tu primera cita virtual, donde conoceremos tus objetivos, historial y necesidades para diseñar un programa personalizado para vos."
       />
 
       <ServiceDetail
@@ -114,11 +116,15 @@ const Services = () => {
         introTitle="¿Para quién es el entrenamiento híbrido?"
         intro="Para quienes quieren aprender la técnica correcta con acompañamiento presencial, pero también disfrutar de la libertad de entrenar a su ritmo desde casa o gimnasio con seguimiento online. Es ideal si querés mejorar tu forma de entrenar, ganar confianza en tus movimientos y mantener la constancia con la guía de un profesional."
         benefits={[
-          "Sentirte más seguro al entrenar solo, sabiendo que estás haciendo las cosas bien.",
-          "Combinar la motivación del trabajo presencial con la flexibilidad del seguimiento online.",
-          "Mantener la constancia y el progreso a tu propio ritmo, sin perder la guía profesional.",
+          "Sentirte más seguro al entrenar por tu cuenta, sabiendo que estás haciendo las cosas correctamente.",
+          "Aprender a ejecutar mejor los ejercicios y ganar más confianza en tu movimiento.",
+          "Combinar la motivación y corrección del trabajo presencial con la flexibilidad del seguimiento online.",
+          "Mantener la constancia y el progreso a tu ritmo, sin perder el acompañamiento y la guía profesional.",
         ]}
-        howItWorks="Alternamos sesiones presenciales donde trabajamos técnica, control y ajustes, con semanas de entrenamiento online para que apliques lo aprendido. Durante todo el proceso tenés acceso a tu plan personalizado, videos explicativos y seguimiento constante."
+        howItWorks="El entrenamiento híbrido combina sesiones presenciales enfocadas en técnica, movimiento y ajustes personalizados, con seguimiento online para que aprendás a entrenar con más seguridad y autonomía, con una duración de 6 semanas. 
+        Dependiendo del plan que elijás, podrás contar con una sesión presencial inicial o  2 sesiones de seguimiento adicionales para acompañar tu progreso y reforzar lo aprendido.
+        Durante todo el proceso tendrás acceso a una programación personalizada, videos explicativos y seguimiento constante.
+        "
         price="¿Como adquirirlo?"
         ctaText="¿Querés probar el formato híbrido? Completá el formulario y te envío todos los detalles."
       />

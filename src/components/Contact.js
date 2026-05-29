@@ -81,7 +81,7 @@ const Contact = () => {
                 name="Teléfono"
                 placeholder="Teléfono"
                 required
-                className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[22px] border-none mb-[22px]"
+                className="w-full bg-[#F8F8F8] px-[20px] py-[13px] text-[15px] rounded-[22px] border-none mb-[18px]"
               />
 
               {/* SERVICIOS */}

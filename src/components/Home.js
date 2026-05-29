@@ -21,19 +21,18 @@ const Home = () => {
 
               <div className="title w-full mb-[24px]">
                 <h3 className="font-extrabold text-[66px] small:text-[42px] leading-[1.05] text-[#222]">
-                  Movéte mejor. <br />
-                  Entrená con{" "}
+                  Entrená seguro... <br />
+                  Viví fuerte{" "}
                   <span className="text-[#2BA6B3]">
-                    confianza.
+                    para toda la vida.
                   </span>
                 </h3>
               </div>
 
               <div className="subtitle w-full max-w-[92%] small:max-w-full mb-[34px]">
                 <p className="text-[19px] small:text-[17px] leading-[1.8] text-[#333]">
-                  Te acompaño paso a paso para que aprendás a moverte con
-                  seguridad, técnica y propósito, construyendo fuerza para toda
-                  la vida.
+                  Te acompaño paso a paso para que dejés atrás el miedo y la inseguridad al entrenar,
+                   aprendiendo a moverte y construir fuerza con confianza y propósito..
                 </p>
               </div>
 

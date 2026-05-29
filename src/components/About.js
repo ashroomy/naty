@@ -1,80 +1,98 @@
-import Experience from "./Experience";
 import SectionContainer from "./SectionContainer";
 import TypeingAnimation from "./TypeingAnimation";
 
 const About = () => {
   return (
     <SectionContainer name="about">
-      <div className="elisc_tm_about w-full float-left pt-[90px] pb-[60px]">
+      <div className="elisc_tm_about w-full float-left pt-0 pb-[60px]">
         <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
-          <div className="w-full bg-white rounded-[32px] p-[38px] small:p-[24px] overflow-hidden">
-            <div>
-              <div className="mb-[35px]">
-                <span className="font-medium uppercase inline-block mb-[10px] tracking-wide">
-                  - Sobre mí
-                </span>
+          {/* COVER */}
+          <div className="about-cover relative mb-0 left-1/2 w-screen -translate-x-1/2 overflow-hidden">
+            <img
+              src="/assets/img/service/CoverNaty.png"
+              alt="Sobre mí"
+              className="w-full h-[315px] small:h-[220px] object-cover"
+            />
 
-                <h3 className="font-extrabold text-[40px] small:text-[32px] leading-tight text-[#222]">
-                  ¡Hola, soy{" "}
-                  <span className="text-[#2BA6B3]">Naty!</span>
-                </h3>
+            <div className="absolute inset-0 bg-black/20"></div>
+
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h2 className="text-white text-[58px] small:text-[34px] font-extrabold tracking-[6px] uppercase drop-shadow-lg">
+                SOBRE MÍ
+              </h2>
+            </div>
+          </div>
+
+          <div className="w-full bg-white rounded-b-[32px] rounded-t-none px-[38px] pt-[32px] pb-[38px] small:p-[24px] overflow-hidden">
+            <div className="grid grid-cols-[38%_62%] small:grid-cols-1 gap-[45px] items-center mb-[28px]">
+              <h3 className="font-extrabold text-[40px] small:text-[32px] leading-tight text-[#222]">
+                ¡Hola, soy <span className="text-[#2BA6B3]">Naty!</span>
+              </h3>
+
+              <div className="bg-[#F4E5E2] rounded-[22px] p-[20px]">
+                <p className="text-[18px] small:text-[17px] leading-[1.6] font-bold text-[#C2877E]">
+                  Durante más de 15 años he ayudado a personas a volver a
+                  moverse con confianza, sin dolor y con propósito.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-[38%_62%] small:grid-cols-1 gap-[45px] items-start">
+              <div className="w-full">
+                <div className="relative">
+                  <div className="absolute -top-[20px] -left-[20px] w-[120px] h-[120px] bg-[#E9F9FF] rounded-full -z-[1]"></div>
+
+                  <div className="absolute -bottom-[20px] -right-[15px] w-[90px] h-[90px] bg-[#F4E5E2] rounded-full -z-[1]"></div>
+
+                  <img
+                    className="w-full rounded-[32px] object-cover"
+                    src="/assets/img/about/Naty1.png"
+                    alt="Naty Fonseca"
+                  />
+                </div>
+
+                <div className="mt-[18px]">
+                  <span className="job font-semibold text-[18px] text-[#2BA6B3]">
+                    <span className="cd-headline rotate-1">
+                      <TypeingAnimation />
+                    </span>
+                  </span>
+                </div>
               </div>
 
-              <div className="flex small:block items-start gap-[45px]">
-                <div className="w-[38%] small:w-full">
-                  <div className="relative">
-                    <div className="absolute -top-[20px] -left-[20px] w-[120px] h-[120px] bg-[#E9F9FF] rounded-full -z-[1]"></div>
+              <div className="w-full">
+                <div className="text-[17px] leading-[1.8] text-[#333]">
+                  <p className="mb-[18px]">
+                    Soy fisioterapeuta y entrenadora personal, apasionada por
+                    ayudar a las personas a aprender a entrenar de manera
+                    segura, consciente y adaptada a sus necesidades... Mi
+                    enfoque combina fisioterapia, fuerza y movimiento para
+                    guiarte según tu condición física, historial de lesiones y
+                    objetivos, ayudándote a recuperar confianza en tu cuerpo y
+                    potenciar tus capacidades.
+                  </p>
 
-                    <div className="absolute -bottom-[20px] -right-[15px] w-[90px] h-[90px] bg-[#F4E5E2] rounded-full -z-[1]"></div>
+                  <p className="mb-[28px]">
+                    Creo que tener dolor, una lesión o miedo al movimiento no
+                    debería limitarte ni alejarte del ejercicio. Al contrario,
+                    el entrenamiento bien guiado puede ayudarte a sentirte
+                    mejor, disminuir molestias y volver a confiar en todo lo que
+                    tu cuerpo es capaz de lograr.
+                  </p>
 
-                    <img
-                      className="w-full rounded-[32px] object-cover"
-                      src="/assets/img/about/Naty1.png"
-                      alt="Naty Fonseca"
-                    />
-                  </div>
-
-                  <div className="mt-[18px]">
-                    <span className="job font-semibold text-[18px] text-[#2BA6B3]">
-                      <span className="cd-headline rotate-1">
-                        <TypeingAnimation />
-                      </span>
-                    </span>
-                  </div>
+                  <p className="mb-[28px]">
+                    Por eso, mi misión es acompañarte paso a paso para que
+                    aprendás a moverte mejor, entrenar con seguridad y construir
+                    fuerza para toda la vida.
+                  </p>
                 </div>
 
-                <div className="w-[62%] small:w-full small:mt-[30px]">
-                  <div className="bg-[#F4E5E2] rounded-[22px] p-[20px] mb-[24px]">
-                    <p className="text-[18px] small:text-[17px] leading-[1.6] font-bold text-[#C2877E]">
-                      Durante más de 15 años he ayudado a personas a volver a
-                      moverse con confianza, sin dolor y con propósito.
-                    </p>
-                  </div>
-
-                  <div className="text-[17px] leading-[1.8] text-[#333]">
-                    <p className="mb-[18px]">
-                      Soy fisioterapeuta y entrenadora personal, apasionada por
-                      integrar la ciencia del movimiento con la fuerza consciente.
-                      Mi trabajo une lo mejor para acompañarte a recuperar,
-                      prevenir y mejorar tu rendimiento, desde un enfoque seguro y
-                      personalizado.
-                    </p>
-
-                    <p className="mb-[28px]">
-                      He visto cómo muchos dolores y lesiones nacen de una mecánica
-                      de movimiento alterada. Por eso, mi misión es guiarte a
-                      reconectar con tu cuerpo, aprender a moverte bien y construir
-                      fuerza para toda la vida.
-                    </p>
-                  </div>
-
-                  <a
-                    href="#contact"
-                    className="inline-block bg-[#2BA6B3] text-white font-semibold px-[30px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
-                  >
-                    Hablemos
-                  </a>
-                </div>
+                <a
+                  href="#contact"
+                  className="inline-block bg-[#2BA6B3] text-white font-semibold px-[30px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
+                >
+                  Hablemos
+                </a>
               </div>
             </div>
 
@@ -108,8 +126,8 @@ const About = () => {
 
             <h3 className="text-[22px] small:text-[18px] leading-[1.5] font-extrabold text-white max-w-[1000px] mx-auto mb-[14px] relative z-[2]">
               Mi misión es enseñarte a entrenar con confianza, sin importar tu
-              punto de partida, para que logrés moverte con libertad, superar tus
-              metas y vivir fuerte.
+              punto de partida, para que logrés moverte con libertad, superar
+              tus metas y vivir fuerte.
             </h3>
 
             <img
@@ -122,6 +140,10 @@ const About = () => {
       </div>
 
       <style jsx>{`
+        .about-cover img {
+          display: block;
+        }
+
         .mission-card {
           position: relative;
         }
