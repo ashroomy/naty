@@ -10,7 +10,6 @@ const Home = () => {
       <div className="elisc_tm_home w-full min-h-[100vh] clear-both float-left bg-white relative overflow-hidden">
 
         <div className="absolute top-[80px] right-[8%] w-[220px] h-[220px] bg-[#E9F9FF] rounded-full blur-3xl opacity-80"></div>
-
         <div className="absolute bottom-[90px] left-[10%] w-[260px] h-[260px] bg-[#F4E5E2] rounded-full blur-3xl opacity-70"></div>
 
         <div className="tm_content w-full max-w-[1250px] min-h-[100vh] mx-auto px-[20px] relative z-[2]">
@@ -32,7 +31,7 @@ const Home = () => {
               <div className="subtitle w-full max-w-[92%] small:max-w-full mb-[34px]">
                 <p className="text-[19px] small:text-[17px] leading-[1.8] text-[#333]">
                   Te acompaño paso a paso para que dejés atrás el miedo y la inseguridad al entrenar,
-                   aprendiendo a moverte y construir fuerza con confianza y propósito..
+                  aprendiendo a moverte y construir fuerza con confianza y propósito para alcanzar tus metas...
                 </p>
               </div>
 
@@ -58,20 +57,9 @@ const Home = () => {
 
               <div className="grid grid-cols-3 small:grid-cols-1 gap-[14px] max-w-[560px] mb-[24px]">
 
-                <MiniCard
-                  number="+15"
-                  text="años de experiencia"
-                />
-
-                <MiniCard
-                  number="100%"
-                  text="enfoque personalizado"
-                />
-
-                <MiniCard
-                  number="1:1"
-                  text="acompañamiento real"
-                />
+                <MiniCard number="+15" text="años de experiencia" />
+                <MiniCard number="100%" text="enfoque personalizado" />
+                <MiniCard number="1:1" text="acompañamiento real" />
 
               </div>
 
@@ -101,7 +89,7 @@ const Home = () => {
                   <span className="text-[22px]">✉️</span>
 
                   <span className="text-[#130F49] font-semibold text-[17px]">
-                    Correo electronico
+                    Correo electrónico
                   </span>
                 </a>
 
@@ -114,7 +102,6 @@ const Home = () => {
               <div className="relative">
 
                 <div className="absolute -top-[24px] -left-[24px] w-[120px] h-[120px] bg-[#E9F9FF] rounded-full z-[-1]"></div>
-
                 <div className="absolute -bottom-[24px] -right-[24px] w-[150px] h-[150px] bg-[#F4E5E2] rounded-full z-[-1]"></div>
 
                 <div className="bg-[#F4E5E2] rounded-[34px] p-[16px]">
@@ -131,6 +118,25 @@ const Home = () => {
 
           </div>
 
+          <div className="w-full pb-[80px] small:pb-[55px]">
+            <div className="max-w-[980px] mx-auto bg-[#F8FCFD] border border-[#F4E5E2] rounded-[34px] px-[45px] py-[38px] small:px-[24px] small:py-[30px] shadow-[0_18px_45px_rgba(19,15,73,0.08)]">
+
+              <h4 className="text-[#130F49] font-extrabold text-[30px] small:text-[25px] mb-[22px] text-center">
+                Este acompañamiento es para vos si...
+              </h4>
+
+              <div className="flex flex-col gap-[16px]">
+
+                <InfoItem text="Querés empezar a entrenar pero no sabés por dónde comenzar." />
+                <InfoItem text="Has intentado hacer ejercicio antes, pero terminás abandonándolo por dolor o falta de resultados." />
+                <InfoItem text="Te preocupa lastimarte porque tenés una lesión previa o molestias frecuentes." />
+                <InfoItem text="Sentís que necesitás una guía profesional que adapte el entrenamiento a tus necesidades." />
+
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -141,7 +147,6 @@ const Home = () => {
 const MiniCard = ({ number, text }) => {
   return (
     <div className="bg-[#E9F9FF] rounded-[24px] p-[20px] text-center">
-
       <h4 className="text-[#2BA6B3] font-extrabold text-[24px] mb-[4px]">
         {number}
       </h4>
@@ -149,7 +154,20 @@ const MiniCard = ({ number, text }) => {
       <p className="text-[#444] text-[14px] leading-[1.5]">
         {text}
       </p>
+    </div>
+  );
+};
 
+const InfoItem = ({ text }) => {
+  return (
+    <div className="flex items-start gap-[12px] bg-white rounded-[20px] px-[20px] py-[16px]">
+      <span className="text-[#2BA6B3] font-bold text-[20px] leading-[1]">
+        ✔
+      </span>
+
+      <p className="text-[#333] text-[17px] small:text-[16px] leading-[1.6]">
+        {text}
+      </p>
     </div>
   );
 };
