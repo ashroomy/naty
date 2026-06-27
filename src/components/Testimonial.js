@@ -27,7 +27,7 @@ const Testimonial = () => {
                 <SwiperSlide>
                   <TestimonialCard
                     quote="He logrado hacer con mi cuerpo cosas que nunca creí posibles."
-                    text="Mejoró su salud física y mental, desarrolló fuerza y aprendió a entrenar con técnica y seguridad. Lo recomiendo por su calidad profesional y entrenamiento personalizado."
+                    text="Llegué buscando mejorar mi condición física y encontré mucho más: fuerza, confianza y la seguridad de entrenar con una metodología adaptada a mí."
                     name="Christel Vogel"
                     program="Entrenamiento Personal"
                   />
@@ -36,7 +36,7 @@ const Testimonial = () => {
                 <SwiperSlide>
                   <TestimonialCard
                     quote="He ganado fuerza, masa muscular y confianza en mi cuerpo."
-                    text="Transformación física, aumento de fuerza, resiliencia y constancia. Lo recomiendo por su atención al detalle, seguimiento cercano y rutinas bien estructuradas."
+                    text="Con un entrenamiento personalizado logré transformar mi cuerpo, desarrollar constancia y disfrutar el proceso mientras seguía avanzando."
                     name="Priscila Chinchilla"
                     program="Entrenamiento Personal"
                   />
@@ -44,8 +44,8 @@ const Testimonial = () => {
 
                 <SwiperSlide>
                   <TestimonialCard
-                    quote="Los médicos me habían condicionado a pensar que no podía entrenar con pesas."
-                    text="Ganó fuerza, movilidad y confianza en su cuerpo. Su transformación más significativa fue mental: dejó atrás creencias limitantes."
+                    quote="Los médicos me habían hecho creer que no podía entrenar con pesas… hoy me demostré que sí puedo."
+                    text="Recuperé la confianza en mi cuerpo, gané fuerza y dejé atrás el miedo. Hoy disfruto entrenar y sé que puedo lograr mucho más de lo que imaginaba."
                     name="Cinthya Núñez"
                     program="Entrenamiento Personal"
                   />
@@ -54,7 +54,7 @@ const Testimonial = () => {
                 <SwiperSlide>
                   <TestimonialCard
                     quote="Aprendí a moverme mejor, no solo a hacer ejercicio."
-                    text="Mejor técnica, mayor movilidad, conciencia del cuerpo y mejor condición física. Educación del movimiento para entrenar con conciencia."
+                    text="Strong Human me enseñó a construir una base sólida. Hoy entreno con mejor técnica, más movilidad y mucha más confianza."
                     name="Justin González"
                     program="Programa StrongHuman"
                   />
@@ -63,7 +63,7 @@ const Testimonial = () => {
                 <SwiperSlide>
                   <TestimonialCard
                     quote="Di el primer paso en el ejercicio y me demostré que sí puedo."
-                    text="Más confianza para moverse, nociones básicas de técnica y consistencia. Lo recomiendo por su claridad y acompañamiento cercano."
+                    text="Empecé desde cero y descubrí que entrenar puede ser seguro, sencillo y sostenible cuando tienes la guía adecuada."
                     name="Silvia González"
                     program="Programa StrongHuman"
                   />
@@ -72,7 +72,7 @@ const Testimonial = () => {
                 <SwiperSlide>
                   <TestimonialCard
                     quote="Ahora cada ejercicio tiene más sentido, y me siento más fuerte y motivada."
-                    text="Más energía, mejor descanso, aumento de fuerza y consciencia postural. Ideal para aprender desde cero y ver cambios reales."
+                    text="Aprendí a entrenar con intención y seguridad. Hoy tengo más energía, más fuerza y disfruto cada entrenamiento."
                     name="Edlin Abarca"
                     program="Programa StrongHuman"
                   />

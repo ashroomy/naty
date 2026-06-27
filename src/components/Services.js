@@ -6,7 +6,7 @@ const services = [
   {
     id: 1,
     name: "PLAN DE ENTRENAMIENTO ONLINE",
-    image: "assets/img/service/Online1.png",
+    image: "assets/img/service/Online.jpg",
     link: "/#online",
     description:
       "Entrená desde donde estés, con acompañamiento real y estructura profesional.",
@@ -14,7 +14,7 @@ const services = [
   {
     id: 2,
     name: "PLAN DE ENTRENAMIENTO HÍBRIDO",
-    image: "assets/img/service/hibrida.png",
+    image: "assets/img/service/Hibrido.jpg",
     link: "#hibrido",
     description:
       "Lo mejor de los dos mundos: guía presencial + libertad para aplicar lo aprendido.",
@@ -22,7 +22,7 @@ const services = [
   {
     id: 3,
     name: "PROGRAMA STRONG HUMAN",
-    image: "assets/img/service/SHPortada1.png",
+    image: "assets/img/service/Strong.jpg",
     link: "/#stronghuman",
     description:
       "Entrená con confianza. Aprendé a moverte sin dolor. Construí una base fuerte.",
@@ -220,7 +220,7 @@ const Services = () => {
             </p>
           </>
         }
-        image="assets/img/service/StrongHuman1.png"
+        image="assets/img/service/Strong.jpg"
         imageFirst
         introTitle=""
         intro="Aprenderás los fundamentos que toda persona debería conocer antes de empezar a entrenar, para construir una base sólida y desarrollar la confianza necesaria para progresar de forma segura, alcanzar sus objetivos y adquirir buenos hábitos para toda la vida."
