@@ -1,5 +1,4 @@
-import { useContext, useState } from "react";
-import { context } from "../context";
+import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 
 const services = [
@@ -8,24 +7,21 @@ const services = [
     name: "PLAN DE ENTRENAMIENTO ONLINE",
     image: "assets/img/service/Online.jpg",
     link: "/#online",
-    description:
-      "Entrená desde donde estés, con acompañamiento real y estructura profesional.",
+    description: "Entrená desde donde estés, con acompañamiento real y estructura profesional.",
   },
   {
     id: 2,
     name: "PLAN DE ENTRENAMIENTO HÍBRIDO",
     image: "assets/img/service/Hibrido.jpg",
     link: "#hibrido",
-    description:
-      "Lo mejor de los dos mundos: guía presencial + libertad para aplicar lo aprendido.",
+    description: "Lo mejor de los dos mundos: guía presencial + libertad para aplicar lo aprendido.",
   },
   {
     id: 3,
     name: "PROGRAMA STRONG HUMAN",
     image: "assets/img/service/Strong.jpg",
     link: "/#stronghuman",
-    description:
-      "Entrená con confianza. Aprendé a moverte sin dolor. Construí una base fuerte.",
+    description: "Entrená con confianza. Aprendé a moverte sin dolor. Construí una base fuerte.",
   },
 ];
 
@@ -36,17 +32,12 @@ const Services = () => {
         <div className="elisc_tm_services w-full float-left pt-[110px] pb-[60px]">
           <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
             <div className="mb-[45px]">
-              <span className="font-medium uppercase inline-block mb-[12px]">
-                - Servicios
-              </span>
-
+              <span className="font-medium uppercase inline-block mb-[12px]">- Servicios</span>
               <h3 className="text-[42px] small:text-[32px] font-extrabold text-[#2BA6B3]">
                 Mis servicios
               </h3>
-
               <p className="text-[18px] text-[#555] mt-[12px] max-w-[650px]">
-                Elegí el formato que mejor se adapte a tu proceso, tu nivel y tu
-                estilo de vida.
+                Elegí el formato que mejor se adapte a tu proceso, tu nivel y tu estilo de vida.
               </p>
             </div>
 
@@ -57,7 +48,7 @@ const Services = () => {
                   key={service.id}
                   className="group bg-white rounded-[28px] shadow-md overflow-hidden hover:shadow-xl transition-all"
                 >
-                  <div className="h-[220px] overflow-hidden">
+                  <div className="h-[220px] small:h-[260px] overflow-hidden">
                     <img
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                       src={service.image}
@@ -65,18 +56,14 @@ const Services = () => {
                     />
                   </div>
 
-                  <div className="p-[28px]">
+                  <div className="p-[28px] small:p-[24px]">
                     <h3 className="text-[20px] font-bold text-[#222] mb-[12px]">
                       {service.name}
                     </h3>
-
                     <p className="text-[#555] leading-[1.7] mb-[24px]">
                       {service.description}
                     </p>
-
-                    <span className="text-[#2BA6B3] font-semibold">
-                      Leer más →
-                    </span>
+                    <span className="text-[#2BA6B3] font-semibold">Leer más →</span>
                   </div>
                 </a>
               ))}
@@ -113,14 +100,11 @@ const Services = () => {
         id="hibrido"
         title="Plan de entrenamiento híbrido"
         subtitle={
-          <>
-            <p className="mb-[18px]">
-              <strong>
-                Disfrutá de la libertad de entrenar por tu cuenta, con el respaldo de un
-                acompañamiento presencial cuando más lo necesitás.
-              </strong>
-            </p>
-          </>
+          <p className="mb-[18px]">
+            <strong>
+              Disfrutá de la libertad de entrenar por tu cuenta, con el respaldo de un acompañamiento presencial cuando más lo necesitás.
+            </strong>
+          </p>
         }
         image="assets/img/service/Hibrido.jpg"
         introTitle="¿Para quién es el entrenamiento híbrido?"
@@ -139,53 +123,40 @@ const Services = () => {
         howItWorks={
           <>
             <p className="mb-[14px]">
-              El entrenamiento híbrido combina sesiones presenciales enfocadas en técnica,
-              movimiento y ajustes personalizados, con seguimiento online para que aprendás
-              a entrenar con más seguridad y autonomía, con una duración de <strong>6 semanas</strong>.
+              El entrenamiento híbrido combina sesiones presenciales enfocadas en técnica, movimiento y ajustes personalizados, con seguimiento online para que aprendás a entrenar con más seguridad y autonomía, con una duración de <strong>6 semanas</strong>.
             </p>
 
             <p className="mb-[14px]">
-              Dependiendo del plan que elijás, podrás contar con una sesión presencial
-              inicial o <strong>2 sesiones de seguimiento adicionales</strong> para acompañar
-              tu progreso y reforzar lo aprendido.
+              Dependiendo del plan que elijás, podrás contar con una sesión presencial inicial o <strong>2 sesiones de seguimiento adicionales</strong> para acompañar tu progreso y reforzar lo aprendido.
             </p>
 
             <p className="mb-[26px]">
-              Durante todo el proceso tendrás acceso a una programación personalizada,
-              videos explicativos y seguimiento constante.
+              Durante todo el proceso tendrás acceso a una programación personalizada, videos explicativos y seguimiento constante.
             </p>
 
             <h5 className="text-[20px] font-bold text-[#222] mb-[18px]">
               INVERSIÓN
             </h5>
 
-            <div className="grid md:grid-cols-2 gap-[18px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[18px]">
               <div className="bg-white rounded-[18px] p-[20px] border border-[#E9F9FF] shadow-sm">
                 <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">
                   Plan Híbrido 1
                 </h6>
-
                 <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">
                   $160 USD
                 </p>
-
-                <p className="text-[#555]">
-                  ✓ 1 sesión presencial inicial
-                </p>
+                <p className="text-[#555]">✓ 1 sesión presencial inicial</p>
               </div>
 
               <div className="bg-white rounded-[18px] p-[20px] border border-[#E9F9FF] shadow-sm">
                 <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">
                   Plan Híbrido 2
                 </h6>
-
                 <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">
                   $200 USD
                 </p>
-
-                <p className="text-[#555]">
-                  ✓ 2 sesiones presenciales
-                </p>
+                <p className="text-[#555]">✓ 2 sesiones presenciales</p>
               </div>
             </div>
           </>
@@ -200,11 +171,8 @@ const Services = () => {
         subtitle={
           <>
             <p className="mb-[18px]">
-              <strong>
-                En STRONG HUMAN aprendés a entrenar, no solo a seguir rutinas.
-              </strong>
+              <strong>En STRONG HUMAN aprendés a entrenar, no solo a seguir rutinas.</strong>
             </p>
-
             <p className="mb-[18px]">
               Durante años escuché la misma frase de mis pacientes y clientes:
               <br />
@@ -212,11 +180,8 @@ const Services = () => {
                 "Nunca nadie me había explicado esto."
               </span>
             </p>
-
             <p>
-              Así nació <strong>STRONG HUMAN</strong>: un programa 100% online de 8 semanas,
-              diseñado para personas que quieren empezar a entrenar desde cero o que tienen
-              muy poca experiencia.
+              Así nació <strong>STRONG HUMAN</strong>: un programa 100% online de 8 semanas, diseñado para personas que quieren empezar a entrenar desde cero o que tienen muy poca experiencia.
             </p>
           </>
         }
@@ -237,15 +202,12 @@ const Services = () => {
             <p className="mb-[14px]">
               <strong>STRONG HUMAN</strong> es un programa 100% online de 8 semanas diseñado para enseñarte a entrenar de forma progresiva, segura y con confianza.
             </p>
-
             <p className="mb-[14px]">
               Comenzaremos con una valoración inicial virtual para conocer tu experiencia, tus objetivos y tus necesidades. A partir de ahí recibirás una programación personalizada a través de la aplicación.
             </p>
-
             <p className="mb-[14px]">
               Cada semana combinarás tus entrenamientos con cápsulas educativas que te ayudarán a comprender el porqué de cada ejercicio, mejorar tu técnica y construir una base sólida para seguir progresando con seguridad y confianza.
             </p>
-
             <p>
               <strong>INVERSIÓN: $85 USD</strong>
             </p>
@@ -266,7 +228,7 @@ const AccordionItem = ({ title, children, bgColor, defaultOpen = false }) => {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-[20px] p-[30px] text-left"
+        className="w-full flex items-center justify-between gap-[20px] p-[30px] small:p-[22px] text-left"
       >
         <h4 className="text-[24px] small:text-[21px] font-bold text-[#222]">
           {title}
@@ -278,11 +240,13 @@ const AccordionItem = ({ title, children, bgColor, defaultOpen = false }) => {
       </button>
 
       <div
-        className={`transition-all duration-500 ease-in-out ${
-          open ? "max-h-[900px] opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden`}
+        className={`transition-all duration-500 ease-in-out overflow-hidden ${
+          open ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
-        <div className="px-[30px] pb-[30px]">{children}</div>
+        <div className="px-[30px] small:px-[22px] pb-[30px] small:pb-[24px]">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -305,18 +269,10 @@ const TextContent = ({ content }) => {
   }
 
   if (typeof content === "string" || typeof content === "number") {
-    return (
-      <p className="text-[17px] leading-[1.8] text-[#555]">
-        {content}
-      </p>
-    );
+    return <p className="text-[17px] leading-[1.8] text-[#555]">{content}</p>;
   }
 
-  return (
-    <div className="text-[17px] leading-[1.8] text-[#555]">
-      {content}
-    </div>
-  );
+  return <div className="text-[17px] leading-[1.8] text-[#555]">{content}</div>;
 };
 
 const ServiceDetail = ({
@@ -339,14 +295,14 @@ const ServiceDetail = ({
     <SectionContainer name={id} id={id}>
       <div className="elisc_tm_services w-full float-left pb-[70px]">
         <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
-          <div className="bg-white rounded-[32px] shadow-lg p-[45px] small:p-[25px]">
+          <div className="bg-white rounded-[32px] shadow-lg p-[45px] small:p-[22px]">
             <div
               className={`relative overflow-hidden bg-[#F8FCFD] rounded-[30px] p-[30px] small:p-[20px] flex small:block gap-[40px] items-center mb-[35px] ${
                 imageFirst ? "" : "flex-row-reverse"
               }`}
             >
-              <div className="absolute top-[-80px] right-[-80px] w-[230px] h-[230px] bg-[#E9F9FF] rounded-full blur-[20px] opacity-80"></div>
-              <div className="absolute bottom-[-90px] left-[-90px] w-[240px] h-[240px] bg-[#F4E5E2] rounded-full blur-[25px] opacity-80"></div>
+              <div className="absolute top-[-80px] right-[-80px] w-[230px] h-[230px] bg-[#E9F9FF] rounded-full blur-[20px] opacity-80" />
+              <div className="absolute bottom-[-90px] left-[-90px] w-[240px] h-[240px] bg-[#F4E5E2] rounded-full blur-[25px] opacity-80" />
 
               <div className="relative z-[2] w-1/2 small:w-full">
                 <div className="relative overflow-hidden rounded-[34px] shadow-xl">
@@ -355,8 +311,7 @@ const ServiceDetail = ({
                     src={image}
                     alt={title}
                   />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
                 </div>
               </div>
 
@@ -375,24 +330,19 @@ const ServiceDetail = ({
                   <TextContent content={subtitle} />
                 </div>
 
-                <div className="bg-white/90 backdrop-blur-sm rounded-[24px] p-[25px] shadow-sm border border-white">
+                <div className="bg-white/90 backdrop-blur-sm rounded-[24px] p-[25px] small:p-[22px] shadow-sm border border-white">
                   {introTitle && (
                     <h4 className="text-[24px] small:text-[21px] font-bold text-[#222] mb-[14px]">
                       {introTitle}
                     </h4>
                   )}
-
                   <TextContent content={intro} />
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col gap-[25px]">
-              <AccordionItem
-                title={benefitsTitle}
-                bgColor="bg-[#E9F9FF]"
-                defaultOpen={false}
-              >
+              <AccordionItem title={benefitsTitle} bgColor="bg-[#E9F9FF]">
                 <ul className="space-y-[14px]">
                   {benefits.map((item, index) => (
                     <li
@@ -406,19 +356,11 @@ const ServiceDetail = ({
                 </ul>
               </AccordionItem>
 
-              <AccordionItem
-                title={howItWorksTitle}
-                bgColor="bg-[#F4E5E2]"
-                defaultOpen={false}
-              >
+              <AccordionItem title={howItWorksTitle} bgColor="bg-[#F4E5E2]">
                 <TextContent content={howItWorks} />
               </AccordionItem>
 
-              <AccordionItem
-                title={price}
-                bgColor="bg-[#D4D4D4]"
-                defaultOpen={false}
-              >
+              <AccordionItem title={price} bgColor="bg-[#D4D4D4]">
                 <div className="flex small:block items-center justify-between gap-[30px]">
                   <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">
                     {ctaText}
