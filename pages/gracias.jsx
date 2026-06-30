@@ -73,7 +73,7 @@ const Gracias = () => {
             alignItems: "center",
             justifyContent: "center",
             gap: "12px",
-            background: "#F28EA6",
+            background: "#2BA6B3",
             color: "#fff",
             padding: "18px 34px",
             borderRadius: "999px",
