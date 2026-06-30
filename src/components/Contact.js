@@ -116,7 +116,7 @@ const Contact = () => {
                     </h4>
 
                     <p className="text-[#444] text-[15px] leading-[1.5]">
-                      acompañamiento remoto personalizado
+                      programación personalizada y acompañamiento profesional.
                     </p>
 
                   </label>
@@ -144,7 +144,7 @@ const Contact = () => {
                     </h4>
 
                     <p className="text-[#444] text-[15px] leading-[1.5]">
-                      sesiones presenciales + online
+                      programación online + sesiones presenciales.
                     </p>
 
                   </label>
@@ -172,7 +172,7 @@ const Contact = () => {
                     </h4>
 
                     <p className="text-[#444] text-[15px] leading-[1.5]">
-                      movimiento + fuerza consciente
+                      aprendé a entrenar desde cero.
                     </p>
 
                   </label>

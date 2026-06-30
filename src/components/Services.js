@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
+import PayPalButton from "../PayPalButton";
 
 const services = [
   {
@@ -33,9 +34,7 @@ const Services = () => {
           <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
             <div className="mb-[45px]">
               <span className="font-medium uppercase inline-block mb-[12px]">- Servicios</span>
-              <h3 className="text-[42px] small:text-[32px] font-extrabold text-[#2BA6B3]">
-                Mis servicios
-              </h3>
+              <h3 className="text-[42px] small:text-[32px] font-extrabold text-[#2BA6B3]">Mis servicios</h3>
               <p className="text-[18px] text-[#555] mt-[12px] max-w-[650px]">
                 Elegí el formato que mejor se adapte a tu proceso, tu nivel y tu estilo de vida.
               </p>
@@ -43,26 +42,13 @@ const Services = () => {
 
             <div className="grid grid-cols-3 small:grid-cols-1 gap-[28px]">
               {services.map((service) => (
-                <a
-                  href={service.link}
-                  key={service.id}
-                  className="group bg-white rounded-[28px] shadow-md overflow-hidden hover:shadow-xl transition-all"
-                >
+                <a href={service.link} key={service.id} className="group bg-white rounded-[28px] shadow-md overflow-hidden hover:shadow-xl transition-all">
                   <div className="h-[220px] small:h-[260px] overflow-hidden">
-                    <img
-                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                      src={service.image}
-                      alt={service.name}
-                    />
+                    <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src={service.image} alt={service.name} />
                   </div>
-
                   <div className="p-[28px] small:p-[24px]">
-                    <h3 className="text-[20px] font-bold text-[#222] mb-[12px]">
-                      {service.name}
-                    </h3>
-                    <p className="text-[#555] leading-[1.7] mb-[24px]">
-                      {service.description}
-                    </p>
+                    <h3 className="text-[20px] font-bold text-[#222] mb-[12px]">{service.name}</h3>
+                    <p className="text-[#555] leading-[1.7] mb-[24px]">{service.description}</p>
                     <span className="text-[#2BA6B3] font-semibold">Leer más →</span>
                   </div>
                 </a>
@@ -101,9 +87,7 @@ const Services = () => {
         title="Plan de entrenamiento híbrido"
         subtitle={
           <p className="mb-[18px]">
-            <strong>
-              Disfrutá de la libertad de entrenar por tu cuenta, con el respaldo de un acompañamiento presencial cuando más lo necesitás.
-            </strong>
+            <strong>Disfrutá de la libertad de entrenar por tu cuenta, con el respaldo de un acompañamiento presencial cuando más lo necesitás.</strong>
           </p>
         }
         image="assets/img/service/Hibrido.jpg"
@@ -125,37 +109,20 @@ const Services = () => {
             <p className="mb-[14px]">
               El entrenamiento híbrido combina sesiones presenciales enfocadas en técnica, movimiento y ajustes personalizados, con seguimiento online para que aprendás a entrenar con más seguridad y autonomía, con una duración de <strong>6 semanas</strong>.
             </p>
-
             <p className="mb-[14px]">
               Dependiendo del plan que elijás, podrás contar con una sesión presencial inicial o <strong>2 sesiones de seguimiento adicionales</strong> para acompañar tu progreso y reforzar lo aprendido.
             </p>
-
-            <p className="mb-[26px]">
-              Durante todo el proceso tendrás acceso a una programación personalizada, videos explicativos y seguimiento constante.
-            </p>
-
-            <h5 className="text-[20px] font-bold text-[#222] mb-[18px]">
-              INVERSIÓN
-            </h5>
-
+            <p className="mb-[26px]">Durante todo el proceso tendrás acceso a una programación personalizada, videos explicativos y seguimiento constante.</p>
+            <h5 className="text-[20px] font-bold text-[#222] mb-[18px]">INVERSIÓN</h5>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[18px]">
               <div className="bg-white rounded-[18px] p-[20px] border border-[#E9F9FF] shadow-sm">
-                <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">
-                  Plan Híbrido 1
-                </h6>
-                <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">
-                  $160 USD
-                </p>
+                <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">Plan Híbrido 1</h6>
+                <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">$160 USD</p>
                 <p className="text-[#555]">✓ 1 sesión presencial inicial</p>
               </div>
-
               <div className="bg-white rounded-[18px] p-[20px] border border-[#E9F9FF] shadow-sm">
-                <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">
-                  Plan Híbrido 2
-                </h6>
-                <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">
-                  $200 USD
-                </p>
+                <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">Plan Híbrido 2</h6>
+                <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">$200 USD</p>
                 <p className="text-[#555]">✓ 2 sesiones presenciales</p>
               </div>
             </div>
@@ -176,9 +143,7 @@ const Services = () => {
             <p className="mb-[18px]">
               Durante años escuché la misma frase de mis pacientes y clientes:
               <br />
-              <span className="italic text-[#2BA6B3]">
-                "Nunca nadie me había explicado esto."
-              </span>
+              <span className="italic text-[#2BA6B3]">"Nunca nadie me había explicado esto."</span>
             </p>
             <p>
               Así nació <strong>STRONG HUMAN</strong>: un programa 100% online de 8 semanas, diseñado para personas que quieren empezar a entrenar desde cero o que tienen muy poca experiencia.
@@ -214,7 +179,7 @@ const Services = () => {
           </>
         }
         price="¿Cómo adquirirlo?"
-        ctaText="¿Querés empezar tu proceso Strong Human? Completá el formulario y te envío todos los detalles de la próxima temporada, sin compromiso."
+        ctaText="¿Querés empezar tu proceso Strong Human? Realizá el pago del programa y después podrás agendar tu valoración inicial virtual."
       />
     </>
   );
@@ -225,28 +190,15 @@ const AccordionItem = ({ title, children, bgColor, defaultOpen = false }) => {
 
   return (
     <div className={`${bgColor} rounded-[26px] w-full overflow-hidden`}>
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-[20px] p-[30px] small:p-[22px] text-left"
-      >
-        <h4 className="text-[24px] small:text-[21px] font-bold text-[#222]">
-          {title}
-        </h4>
-
+      <button type="button" onClick={() => setOpen(!open)} className="w-full flex items-center justify-between gap-[20px] p-[30px] small:p-[22px] text-left">
+        <h4 className="text-[24px] small:text-[21px] font-bold text-[#222]">{title}</h4>
         <span className="w-[42px] h-[42px] min-w-[42px] rounded-full bg-white text-[#2BA6B3] flex items-center justify-center text-[30px] font-semibold shadow-sm">
           {open ? "−" : "+"}
         </span>
       </button>
 
-      <div
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${
-          open ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <div className="px-[30px] small:px-[22px] pb-[30px] small:pb-[24px]">
-          {children}
-        </div>
+      <div className={`transition-all duration-500 ease-in-out overflow-hidden ${open ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}`}>
+        <div className="px-[30px] small:px-[22px] pb-[30px] small:pb-[24px]">{children}</div>
       </div>
     </div>
   );
@@ -257,10 +209,7 @@ const TextContent = ({ content }) => {
     return (
       <>
         {content.map((item, index) => (
-          <p
-            key={index}
-            className="text-[17px] leading-[1.8] text-[#555] mb-[14px] last:mb-0"
-          >
+          <p key={index} className="text-[17px] leading-[1.8] text-[#555] mb-[14px] last:mb-0">
             {item}
           </p>
         ))}
@@ -296,46 +245,28 @@ const ServiceDetail = ({
       <div className="elisc_tm_services w-full float-left pb-[70px]">
         <div className="tm_content w-full max-w-[1250px] mx-auto px-[20px]">
           <div className="bg-white rounded-[32px] shadow-lg p-[45px] small:p-[22px]">
-            <div
-              className={`relative overflow-hidden bg-[#F8FCFD] rounded-[30px] p-[30px] small:p-[20px] flex small:block gap-[40px] items-center mb-[35px] ${
-                imageFirst ? "" : "flex-row-reverse"
-              }`}
-            >
+            <div className={`relative overflow-hidden bg-[#F8FCFD] rounded-[30px] p-[30px] small:p-[20px] flex small:block gap-[40px] items-center mb-[35px] ${imageFirst ? "" : "flex-row-reverse"}`}>
               <div className="absolute top-[-80px] right-[-80px] w-[230px] h-[230px] bg-[#E9F9FF] rounded-full blur-[20px] opacity-80" />
               <div className="absolute bottom-[-90px] left-[-90px] w-[240px] h-[240px] bg-[#F4E5E2] rounded-full blur-[25px] opacity-80" />
 
               <div className="relative z-[2] w-1/2 small:w-full">
                 <div className="relative overflow-hidden rounded-[34px] shadow-xl">
-                  <img
-                    className="w-full h-[600px] small:h-[420px] object-cover object-center"
-                    src={image}
-                    alt={title}
-                  />
+                  <img className="w-full h-[600px] small:h-[420px] object-cover object-center" src={image} alt={title} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
                 </div>
               </div>
 
               <div className="relative z-[2] w-1/2 small:w-full small:mt-[28px]">
-                {label && (
-                  <span className="font-medium uppercase inline-block mb-[12px] text-[#C2877E]">
-                    {label}
-                  </span>
-                )}
+                {label && <span className="font-medium uppercase inline-block mb-[12px] text-[#C2877E]">{label}</span>}
 
-                <h3 className="text-[42px] small:text-[30px] font-extrabold text-[#2BA6B3] leading-tight uppercase mb-[15px]">
-                  {title}
-                </h3>
+                <h3 className="text-[42px] small:text-[30px] font-extrabold text-[#2BA6B3] leading-tight uppercase mb-[15px]">{title}</h3>
 
                 <div className="mb-[25px]">
                   <TextContent content={subtitle} />
                 </div>
 
                 <div className="bg-white/90 backdrop-blur-sm rounded-[24px] p-[25px] small:p-[22px] shadow-sm border border-white">
-                  {introTitle && (
-                    <h4 className="text-[24px] small:text-[21px] font-bold text-[#222] mb-[14px]">
-                      {introTitle}
-                    </h4>
-                  )}
+                  {introTitle && <h4 className="text-[24px] small:text-[21px] font-bold text-[#222] mb-[14px]">{introTitle}</h4>}
                   <TextContent content={intro} />
                 </div>
               </div>
@@ -345,10 +276,7 @@ const ServiceDetail = ({
               <AccordionItem title={benefitsTitle} bgColor="bg-[#E9F9FF]">
                 <ul className="space-y-[14px]">
                   {benefits.map((item, index) => (
-                    <li
-                      key={index}
-                      className="flex gap-[12px] text-[17px] leading-[1.6] text-[#444]"
-                    >
+                    <li key={index} className="flex gap-[12px] text-[17px] leading-[1.6] text-[#444]">
                       <span className="text-[#2BA6B3] font-bold">✓</span>
                       <p>{item}</p>
                     </li>
@@ -360,21 +288,56 @@ const ServiceDetail = ({
                 <TextContent content={howItWorks} />
               </AccordionItem>
 
-              <AccordionItem title={price} bgColor="bg-[#D4D4D4]">
-                <div className="flex small:block items-center justify-between gap-[30px]">
-                  <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">
-                    {ctaText}
-                  </p>
+              <AccordionItem title={price} bgColor="bg-[#E5E5E5]">
+                {id === "stronghuman" ? (
+                  <div className="grid grid-cols-2 small:grid-cols-1 gap-[30px] items-center">
+                    <div>
+                      <span className="inline-block text-[24px] uppercase tracking-[1.5px] text-[#C2877E] font-bold mb-[12px]">
+                        ¿Listo para iniciar?
+                      </span>
 
-                  <a
-                    href="https://forms.gle/rfkKz1Xn5azZZWky9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block small:w-full small:text-center small:mt-[22px] bg-[#2BA6B3] text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#238B96] transition-all"
-                  >
-                    Llenar formulario
-                  </a>
-                </div>
+                      <h5 className="text-[20px] small:text-[24px] font-extrabold text-[#222] leading-tight mb-[14px]">
+                        Asegurá tu espacio en Strong Human
+                      </h5>
+
+                      <p className="text-[17px] leading-[1.7] text-[#555] max-w-[620px] mb-[18px]">
+                        {ctaText}
+                      </p>
+
+                      <ul className="space-y-[10px] text-[16px] text-[#444]">
+                        <li className="flex gap-[10px]">
+                          <span className="text-[#2BA6B3] font-bold">✓</span>
+                          Pago seguro con PayPal
+                        </li>
+                        <li className="flex gap-[10px]">
+                          <span className="text-[#2BA6B3] font-bold">✓</span>
+                          Acceso al proceso de agenda después del pago
+                        </li>
+                        <li className="flex gap-[10px]">
+                          <span className="text-[#2BA6B3] font-bold">✓</span>
+                          Valoración inicial virtual incluida
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="w-full max-w-[420px] small:max-w-full justify-self-end small:justify-self-auto">
+                      <PayPalButton />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex small:block items-center justify-between gap-[30px]">
+                    <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">{ctaText}</p>
+
+                    <a
+                      href="https://forms.gle/rfkKz1Xn5azZZWky9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block small:w-full small:text-center small:mt-[22px] bg-[#2BA6B3] text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#238B96] transition-all"
+                    >
+                      Llenar formulario
+                    </a>
+                  </div>
+                )}
               </AccordionItem>
             </div>
           </div>

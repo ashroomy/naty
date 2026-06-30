@@ -7,6 +7,8 @@ import Services from "@/src/components/Services";
 import { context } from "@/src/context";
 import Layout from "@/src/layout/Layout";
 import { useContext, useEffect } from "react";
+import Script from "next/script";
+import PayPalButton from "../src/PayPalButton";
 const IndexOnePage = () => {
   const { animationChnage } = useContext(context);
   useEffect(() => {
