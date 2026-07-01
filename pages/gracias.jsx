@@ -80,7 +80,7 @@ const Gracias = () => {
             fontSize: "20px",
             fontWeight: "700",
             textDecoration: "none",
-            boxShadow: "0 14px 35px rgba(142, 219, 242, 0.45)",
+            boxShadow: "0 14px 35px rgba(0, 0, 0, 0.45)",
           }}
         >
           Agendar mi llamada <span style={{ fontSize: "26px" }}>→</span>
