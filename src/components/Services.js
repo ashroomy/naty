@@ -117,7 +117,7 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[18px]">
               <div className="bg-white rounded-[18px] p-[20px] border border-[#E9F9FF] shadow-sm">
                 <h6 className="font-bold text-[18px] text-[#2BA6B3] mb-[8px]">Plan Híbrido 1</h6>
-                <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">$160 USD</p>
+                <p className="text-[26px] font-extrabold text-[#222] mb-[12px]">$165 USD</p>
                 <p className="text-[#555]">✓ 1 sesión presencial inicial</p>
               </div>
               <div className="bg-white rounded-[18px] p-[20px] border border-[#E9F9FF] shadow-sm">
@@ -130,6 +130,7 @@ const Services = () => {
         }
         price="¿Cómo adquirirlo?"
         ctaText="¿Querés probar el formato híbrido? Completá el formulario y te envío todos los detalles."
+        
       />
 
       <ServiceDetail
@@ -198,7 +199,11 @@ const AccordionItem = ({ title, children, bgColor, defaultOpen = false }) => {
       </button>
 
       <div className={`transition-all duration-500 ease-in-out overflow-hidden ${open ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}`}>
-        <div className="px-[30px] small:px-[22px] pb-[30px] small:pb-[24px]">{children}</div>
+        {open && (
+          <div className="px-[30px] small:px-[22px] pb-[30px] small:pb-[24px]">
+            {children}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -240,6 +245,27 @@ const ServiceDetail = ({
   price,
   ctaText,
 }) => {
+  const payment =
+    id === "online"
+      ? {
+          hostedButtonId: "S38BR2XQ32TZY",
+          programName: "",
+          price: "",
+          heading: "Asegurá tu espacio en el plan online",
+          footerText: "Después del pago podrás agendar tu primera cita virtual.",
+          lastBenefit: "Plan personalizado con seguimiento profesional",
+        }
+      : id === "stronghuman"
+        ? {
+            hostedButtonId: "KGLDUQJ4DN4A4",
+            programName: "",
+            price: "",
+            heading: "Asegurá tu espacio en Strong Human",
+            footerText: "Después del pago podrás agendar tu valoración inicial virtual.",
+            lastBenefit: "Valoración inicial virtual incluida",
+          }
+        : null;
+
   return (
     <SectionContainer name={id} id={id}>
       <div className="elisc_tm_services w-full float-left pb-[70px]">
@@ -289,7 +315,7 @@ const ServiceDetail = ({
               </AccordionItem>
 
               <AccordionItem title={price} bgColor="bg-[#E5E5E5]">
-                {id === "stronghuman" ? (
+                {payment ? (
                   <div className="grid grid-cols-2 small:grid-cols-1 gap-[30px] items-center">
                     <div>
                       <span className="inline-block text-[24px] uppercase tracking-[1.5px] text-[#C2877E] font-bold mb-[12px]">
@@ -297,7 +323,7 @@ const ServiceDetail = ({
                       </span>
 
                       <h5 className="text-[20px] small:text-[24px] font-extrabold text-[#222] leading-tight mb-[14px]">
-                        Asegurá tu espacio en Strong Human
+                        {payment.heading}
                       </h5>
 
                       <p className="text-[17px] leading-[1.7] text-[#555] max-w-[620px] mb-[18px]">
@@ -315,13 +341,18 @@ const ServiceDetail = ({
                         </li>
                         <li className="flex gap-[10px]">
                           <span className="text-[#2BA6B3] font-bold">✓</span>
-                          Valoración inicial virtual incluida
+                          {payment.lastBenefit}
                         </li>
                       </ul>
                     </div>
 
                     <div className="w-full max-w-[420px] small:max-w-full justify-self-end small:justify-self-auto">
-                      <PayPalButton />
+                      <PayPalButton
+                        hostedButtonId={payment.hostedButtonId}
+                        programName={payment.programName}
+                        price={payment.price}
+                        footerText={payment.footerText}
+                      />
                     </div>
                   </div>
                 ) : (
@@ -329,13 +360,11 @@ const ServiceDetail = ({
                     <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">{ctaText}</p>
 
                     <a
-                      href="https://forms.gle/rfkKz1Xn5azZZWky9"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block small:w-full small:text-center small:mt-[22px] bg-[#2BA6B3] text-white font-semibold px-[28px] py-[14px] rounded-full hover:bg-[#238B96] transition-all"
-                    >
-                      Llenar formulario
-                    </a>
+                  href="#contact"
+                  className="inline-block bg-[#2BA6B3] text-white font-semibold px-[30px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
+                >
+                  Llenar formulario
+                </a>
                   </div>
                 )}
               </AccordionItem>
