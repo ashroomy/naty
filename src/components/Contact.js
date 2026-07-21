@@ -1,8 +1,13 @@
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 
-const Contact = () => {
-  const [selectedService, setSelectedService] = useState("");
+const Contact = ({
+  defaultSelectedService = "",
+  title = "¡EMPECEMOS YA!",
+  description = "Llena el siguiente formulario para coordinar conmigo y empezamos a trabajar.",
+  subject = "Nuevo formulario desde la página web",
+}) => {
+  const [selectedService, setSelectedService] = useState(defaultSelectedService);
 
   return (
     <SectionContainer name="contact">
@@ -16,11 +21,11 @@ const Contact = () => {
 
             <div className="text-center mb-[25px]">
               <h3 className="text-[36px] small:text-[28px] font-extrabold text-black uppercase mb-[8px]">
-                ¡EMPECEMOS YA!
+                {title}
               </h3>
 
               <p className="text-[16px] text-[#222]">
-                Llena el siguiente formulario para coordinar conmigo y empezamos a trabajar.
+                {description}
               </p>
             </div>
 
@@ -33,7 +38,7 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="_subject"
-                value="Nuevo formulario desde la página web"
+                value={subject}
               />
 
               <input

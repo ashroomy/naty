@@ -360,11 +360,11 @@ const ServiceDetail = ({
                     <p className="text-[17px] leading-[1.7] text-[#555] max-w-[650px]">{ctaText}</p>
 
                     <a
-                  href="#contact"
-                  className="inline-block bg-[#2BA6B3] text-white font-semibold px-[30px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
-                >
-                  Llenar formulario
-                </a>
+                      href="/formulario-hibrido"
+                      className="inline-block bg-[#2BA6B3] text-white font-semibold px-[30px] py-[13px] rounded-full hover:bg-[#238B96] transition-all"
+                    >
+                      Llenar formulario
+                    </a>
                   </div>
                 )}
               </AccordionItem>
