@@ -9,21 +9,23 @@ const Gracias = () => {
     <>
       <main className="gracias">
         <section className="contenido">
-          <div className="check" aria-hidden="true">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M5 12.5L9.3 16.5L19 7"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+          <div className="check-wrapper" aria-hidden="true">
+            <div className="check">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M5 12.5L9.3 16.5L19 7"
+                  stroke="currentColor"
+                  strokeWidth="2.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
           </div>
 
           <p className="confirmado">Pago confirmado</p>
@@ -63,6 +65,7 @@ const Gracias = () => {
                 <span>Agendar mi llamada</span>
 
                 <svg
+                  className="flecha"
                   width="19"
                   height="19"
                   viewBox="0 0 24 24"
@@ -107,14 +110,15 @@ const Gracias = () => {
                 <span>Llenar formulario</span>
 
                 <svg
-                  width="18"
-                  height="18"
+                  className="flecha"
+                  width="19"
+                  height="19"
                   viewBox="0 0 24 24"
                   fill="none"
                   aria-hidden="true"
                 >
                   <path
-                    d="M8 16L16 8M10 8H16V14"
+                    d="M5 12H19M13 6L19 12L13 18"
                     stroke="currentColor"
                     strokeWidth="1.8"
                     strokeLinecap="round"
@@ -166,17 +170,31 @@ const Gracias = () => {
           text-align: center;
         }
 
-        .check {
-          width: 52px;
-          height: 52px;
+        .check-wrapper {
+          width: 74px;
+          height: 74px;
           display: grid;
           place-items: center;
-          margin: 0 auto 16px;
-          border: 1px solid rgba(43, 166, 179, 0.13);
+          margin: 0 auto 18px;
+          border: 1px solid rgba(43, 166, 179, 0.15);
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.92);
-          color: #29a9b5;
-          box-shadow: 0 10px 30px rgba(43, 166, 179, 0.12);
+          background: rgba(255, 255, 255, 0.75);
+          box-shadow:
+            0 16px 38px rgba(43, 166, 179, 0.14),
+            inset 0 0 0 6px rgba(255, 255, 255, 0.7);
+        }
+
+        .check {
+          width: 58px;
+          height: 58px;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          background: linear-gradient(145deg, #43bdc8, #248f9a);
+          color: #ffffff;
+          box-shadow:
+            0 12px 26px rgba(43, 166, 179, 0.3),
+            inset 0 1px 1px rgba(255, 255, 255, 0.35);
         }
 
         .confirmado {
@@ -319,8 +337,9 @@ const Gracias = () => {
             background-color 0.2s ease;
         }
 
-        .boton svg {
+        .flecha {
           flex-shrink: 0;
+          display: block;
           transition: transform 0.2s ease;
         }
 
@@ -328,7 +347,7 @@ const Gracias = () => {
           transform: translateY(-2px);
         }
 
-        .boton:hover svg {
+        .boton:hover .flecha {
           transform: translateX(3px);
         }
 
@@ -424,9 +443,14 @@ const Gracias = () => {
             padding: 34px 14px;
           }
 
+          .check-wrapper {
+            width: 68px;
+            height: 68px;
+          }
+
           .check {
-            width: 48px;
-            height: 48px;
+            width: 52px;
+            height: 52px;
           }
 
           h1 {
@@ -469,12 +493,13 @@ const Gracias = () => {
         @media (prefers-reduced-motion: reduce) {
           .tarjeta,
           .boton,
-          .boton svg {
+          .flecha {
             transition: none;
           }
 
           .tarjeta:hover,
-          .boton:hover {
+          .boton:hover,
+          .boton:hover .flecha {
             transform: none;
           }
         }
