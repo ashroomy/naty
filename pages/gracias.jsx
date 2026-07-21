@@ -2,7 +2,7 @@ const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSdXViiG7TIRQaDPTmqcUN85SN0z83PqS_2gT4PwTv8WDBqt_A/viewform";
 
 const CALENDAR_URL =
-  "https://calendar.app.google/iYPBhtw8nqcWPxyG7";
+  "https://calendar.app.google/Ph5aLa8cQCAFCYQU7";
 
 const Gracias = () => {
   return (
